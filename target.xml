@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="onlineManager" type="TestEditor.OptionConfig.OnlineManagerSection,&#xD;&#xA;					TestEditor.OptionConfig" allowExeDefinition="MachineToLocalUser" />
+    <section name="TestObjectDownload" type="TestEditor.OptionConfig.TestObjectDownloadSection,&#xD;&#xA;					TestEditor.OptionConfig" allowExeDefinition="MachineToLocalUser" />
+    <section name="engineSandBox" type="TestEditor.OptionConfig.EngineSandBoxSection,&#xD;&#xA;					TestEditor.OptionConfig" allowExeDefinition="MachineToLocalUser" />
+    <section name="currentAccount" type="TestEditor.OptionConfig.CurrentAccountSection,&#xD;&#xA;					TestEditor.OptionConfig" allowExeDefinition="MachineToLocalUser" />
+    <section name="editorTrace" type="TestEditor.OptionConfig.EditorTraceSection,&#xD;&#xA;					TestEditor.OptionConfig" allowExeDefinition="MachineToLocalUser" />
+  </configSections>
+  <appSettings>
+    <add key="Version" value="3.2.0.14" />
+    <add key="TimeOut" value="120" />
+    <add key="UIChunkSize" value="500000" />
+    <add key="BulkInputSize" value="5000" />
+    <add key="MaxPerformanceDateRangInterval" value="0" />
+    <add key="EditorUserCulture" value="zh-CN" />
+  </appSettings>
+  <engineSandBox>
+    <SearchEngine type="3" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/sms/v2" SandBoxUrl="https://sfapitest.Test.com/sem/sms/v2"/>
+    <SearchEngine type="4" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/nms/v2" SandBoxUrl="https://sfapitest.Test.com/sem/nms/v2"/>
+    <SearchEngine type="0" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/common" SandBoxUrl="https://sfapitest.Test.com/sem/common"/>
+    <SearchEngine type="5" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/ao/v1" SandBoxUrl="https://sfapitest.Test.com/sem/ao/v1"/>
+  </engineSandBox>
+  <TestObjectDownload maxKeywordsNumber="600" maxAdsNumber="400" maxAdGroupsNumber="100" maxCampaignsNumber="40"/>
+  <onlineManager retryTimes="10" waitOnTimeOut="100" threadCount="20" />
+  <currentAccount>
+    <Account type="0" accountID="1381007" userID="4286973527" />
+    <Account type="1" />
+  </currentAccount>
+  <editorTrace serialNumber="72FDDA718EA21D3-BC305BA8440D" />
+
+  <connectionStrings>
+    <add name="LocalDB" connectionString="Data Source={0}\DB\TestSEM.s3db" />
+  </connectionStrings>
+</configuration>
