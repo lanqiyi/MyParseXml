@@ -5,54 +5,56 @@ package com.anjuke.minzhao.test;
  */
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamSource;
+
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.Element;
-import org.xml.sax.SAXException;
 
 public class MyParseXml {
-	public static void main(String []args){
-		String[] targetString;
-		String subNode="engineSandBox";
-		targetString=read(subNode);
-		System.out.println(targetString);
+	public static void main(String []args){	
+		String subNode="SearchEngine";
+		String FilePath="D:/workspace/MyParseXml/target.xml";
+		ParseDom(subNode,FilePath);
+		//System.out.println(targetString);
 	}
-	public static String[] read(String subNode){
-		String tarNode="";
-		String[] allNodes=new String[20];
-		int i,num;
-		DocumentBuilderFactory domFac=DocumentBuilderFactory.newInstance();
+	public static void ParseDom(String subNode,String FilePath){
+		NodeList nodelist;
+		DocumentBuilderFactory dbf=DocumentBuilderFactory.newInstance();
 		try{
-		DocumentBuilder domBuilder=domFac.newDocumentBuilder();	
-		InputStream fileStream=new FileInputStream(new File("D:/workspace/MyParseXml/target.xml"));
-		Document doc=domBuilder.parse(fileStream);
+		DocumentBuilder db=dbf.newDocumentBuilder();
+		Document doc=db.parse(FilePath);
 		Element root=doc.getDocumentElement();
-		if(root==null) {return allNodes ;}
-		//NodeList x=doc.getElementsByTagName(subNode);
-		NodeList xNodes=root.getChildNodes();
-		num=xNodes.getLength();
-		System.out.println(num);
-		for(i=0;i<num;i++)
-		{
-			Node y=xNodes.item(i);
-			allNodes[i]=y.getNodeName();
+		nodelist=root.getElementsByTagName(subNode);
+		System.out.println("总共有"+nodelist.getLength()+"个ren");
+		GetElement(nodelist);
 		}
-		}
-		catch(Exception e) {  
+		catch(Exception e){
 			e.printStackTrace();
-			System.out.println("NO WOrk");
 		}
-		return allNodes;
-}
-}
+	}
+	private static void GetElement(NodeList nodelist) {
+		// TODO Auto-generated method stub
+		Node cnode;
+        int i;
+        if (nodelist.getLength() == 0) {
+            return;
+        }
+       
+        for (i = 0; i < nodelist.getLength(); i++) {
+            cnode = nodelist.item(i); 
+            NamedNodeMap list=cnode.getAttributes();
+            for(int z=0;z<list.getLength();z++){
+            	System.out.println("name:"+list.item(z).getNodeName()+";value:"+list.item(z).getNodeValue());
+            }
+        }
+    }
+        
 
-
+}
+	
