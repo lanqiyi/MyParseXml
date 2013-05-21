@@ -17,7 +17,6 @@
   </appSettings>
   <engineSandBox>
     <SearchEngine type="3" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/sms/v2" SandBoxUrl="https://sfapitest.Test.com/sem/sms/v2">
-       hello world!
 	</SearchEngine>
     <SearchEngine type="4" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/nms/v2" SandBoxUrl="https://sfapitest.Test.com/sem/nms/v2"/>
     <SearchEngine type="0" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/common" SandBoxUrl="https://sfapitest.Test.com/sem/common"/>
