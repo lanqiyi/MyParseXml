@@ -16,13 +16,17 @@
     <add key="EditorUserCulture" value="zh-CN" />
   </appSettings>
   <engineSandBox>
-    <SearchEngine type="3" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/sms/v2" SandBoxUrl="https://sfapitest.Test.com/sem/sms/v2"/>
+    <SearchEngine type="3" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/sms/v2" SandBoxUrl="https://sfapitest.Test.com/sem/sms/v2">
+       hello world!
+	</SearchEngine>
     <SearchEngine type="4" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/nms/v2" SandBoxUrl="https://sfapitest.Test.com/sem/nms/v2"/>
     <SearchEngine type="0" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/common" SandBoxUrl="https://sfapitest.Test.com/sem/common"/>
     <SearchEngine type="5" useSandBox="false" timeOut="300" Url="https://api.Test.com/sem/ao/v1" SandBoxUrl="https://sfapitest.Test.com/sem/ao/v1"/>
   </engineSandBox>
   <TestObjectDownload maxKeywordsNumber="600" maxAdsNumber="400" maxAdGroupsNumber="100" maxCampaignsNumber="40"/>
-  <onlineManager retryTimes="10" waitOnTimeOut="100" threadCount="20" />
+  <onlineManager retryTimes="10" waitOnTimeOut="100" threadCount="20" >
+ hello world!
+</onlineManager>
   <currentAccount>
     <Account type="0" accountID="1381007" userID="4286973527" />
     <Account type="1" />

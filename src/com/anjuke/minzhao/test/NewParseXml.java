@@ -15,14 +15,15 @@ import org.w3c.dom.NodeList;
 public class NewParseXml {
 	
 	public static void main(String []args){	
-		String subNode="engineSandBox";
+		String subNode="onlineManager";
 		String FilePath="D:/workspace/MyParseXml/target.xml";
 		DocumentBuilderFactory dbf=DocumentBuilderFactory.newInstance();
 		try{
 			DocumentBuilder db=dbf.newDocumentBuilder();
 			Document doc=db.parse(FilePath);
 			Element root=doc.getDocumentElement();
-			NodeList cnode=root.getElementsByTagName(subNode);
+			NodeList cnode=doc.getElementsByTagName(subNode);
+			System.out.println("这文档里面关于"+subNode+"的关键词个数为："+cnode.getLength());
 			GetElement(cnode);
 		
 		}
@@ -37,22 +38,27 @@ public class NewParseXml {
 		}
 		else {
 			for(i=0;i<nodelist.getLength();i++){
+				System.out.println(nodelist.getLength());
 				Node node=nodelist.item(i);
 				if(!(node.hasChildNodes())){
-					System.out.println("name"+i+":"+node.getNodeName()+";value"+i+":"+node.getNodeValue()+" "+node.getNodeType());
+					System.out.println("节点名称"+i+":"+node.getNodeName()+";value"+i+":"+node.getNodeValue());
 				}
 				else{
 					NodeList subNodeList= node.getChildNodes();
 					GetElement(subNodeList);
 				}
+				if(!(node.hasAttributes())){
+					System.out.println("this node has no attributes");
+				}
+				else{
+					System.out.println("the attributes of this node are:");
+					for(int j=0;j<node.getAttributes().getLength();j++){
+						System.out.println(node.getAttributes().item(j));
+					}
+				}
 			}
 			return ;
 		}
 	}
-	private static String GetValue(Node node) {
-		// TODO Auto-generated method stub
-		node.getNodeType();
-		
-		return null;
-	}
+
 }
