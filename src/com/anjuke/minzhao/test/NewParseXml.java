@@ -2,10 +2,8 @@ package com.anjuke.minzhao.test;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
@@ -14,20 +12,21 @@ import org.w3c.dom.NodeList;
 
 public class NewParseXml {
 	
-	public static void main(String []args){	
+	// ç­‰å·å‰åéƒ½éœ€è¦åŠ ä¸€ä¸ªç©ºæ ¼ï¼Œè¿™æ · : int i = 0;
+	public static void main(String []args) {	
 		String subNode="onlineManager";
 		String FilePath="D:/workspace/MyParseXml/target.xml";
+		
 		DocumentBuilderFactory dbf=DocumentBuilderFactory.newInstance();
-		try{
+		try {
 			DocumentBuilder db=dbf.newDocumentBuilder();
 			Document doc=db.parse(FilePath);
 			Element root=doc.getDocumentElement();
 			NodeList cnode=doc.getElementsByTagName(subNode);
-			System.out.println("ÕâÎÄµµÀïÃæ¹ØÓÚ"+subNode+"µÄ¹Ø¼ü´Ê¸öÊıÎª£º"+cnode.getLength());
+			System.out.println("ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+subNode+"ï¿½Ä¹Ø¼ï¿½ï¿½Ê¸ï¿½ï¿½ï¿½Îªï¿½ï¿½"+cnode.getLength());
 			GetElement(cnode);
-		
 		}
-		catch(Exception e){
+		catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -41,7 +40,7 @@ public class NewParseXml {
 				System.out.println(nodelist.getLength());
 				Node node=nodelist.item(i);
 				if(!(node.hasChildNodes())){
-					System.out.println("½ÚµãÃû³Æ"+i+":"+node.getNodeName()+";value"+i+":"+node.getNodeValue());
+					System.out.println("ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½"+i+":"+node.getNodeName()+";value"+i+":"+node.getNodeValue());
 				}
 				else{
 					NodeList subNodeList= node.getChildNodes();
