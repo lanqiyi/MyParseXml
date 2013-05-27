@@ -15,8 +15,8 @@ public static void main(String args[]) {
     	public void say(){
             System.out.println("title的值"+ title+"");
             System.out.println("description1的值"+ description1+"");
-            //System.out.println("description2的值"+ des);
-            System.out.println("");）
+            System.out.println("description2的值"+ des);
+            System.out.println("");
         }
     }
     Weixueyuan obj1=new Weixueyuan();  //创建对象的同时进行初始化
