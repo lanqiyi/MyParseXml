@@ -20,10 +20,9 @@ public class autoAddNum {
             final String targetFile = "D:/Workspace/MyParseXml/test.feature";
             final String charset = "UTF-8";
 
-            br = new BufferedReader(new InputStreamReader(new FileInputStream(sourcefile),
+            br = new BufferedReader(new InputStreamReader(new FileInputStream(sourcefile), charset));
+            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(targetFile),
                     charset));
-            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(
-                    targetFile), charset));
 
             String line = br.readLine();
             String str = "@";
