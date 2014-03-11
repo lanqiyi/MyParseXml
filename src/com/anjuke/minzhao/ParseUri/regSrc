@@ -1,0 +1,2798 @@
+<?php
+$config['regex_function']='preg_match';
+$config['regex_label']='@';
+$config['mappings']['SEO_FriendLink']=array(
+    '^/friendlink(.*)'
+);
+
+$config['mappings']['QA_QuestionMain']=array(
+    '^/ask(/?)$'
+);
+$config['mappings']['QA_Solr']=array(
+    '^/ask/solr/'
+);
+$config['mappings']['QA_QuestionVote']=array(
+    '^/ask/vote/',
+    '^/ask/vote/([0-9]+)/$',
+    '^/ask/vote/([0-9]+)(.*)'
+);
+
+$config['mappings']['QA_QuestionBao']=array(
+    '^/ask/openlucky',
+    '^/ask/openlucky/'
+);
+
+$config['mappings']['QA_QuestionSignSuccess']=array(
+    '^/ask/signdaysuccess',
+    '^/ask/signdaysuccess/'
+);
+$config['mappings']['QA_QuestionSign']=array(
+    '^/ask/signday',
+    '^/ask/signday/'
+);
+
+$config['mappings']['QA_QuestionDetail']=array(
+    '^/ask/view/([0-9]{1,11})/$',
+    '^/ask/view/([0-9]{1,11})(.*)',
+    '^/ask/view/',
+    '^/ask/view',
+    '^/ask/afview/([0-9]{1,11})/$',
+    '^/ask/afview/([0-9]{1,11})(.*)',
+    '^/ask/afview/',
+    '^/ask/afview'
+);
+
+$config['mappings']['QA_QuestionNew']=array(
+    '^/ask/new/'
+);
+
+$config['mappings']['QA_QuestionAskexpert']=array(
+    '^/askexpert/(sh|bj)/$',
+    '^/askexpert/(sh|bj)(.*)',
+    '^/askexpert/',
+);
+
+$config['mappings']['QA_QuestionClass']=array(
+    '^/ask/d(.*)-(t|n)(.*)',
+    '^/ask/d(.*)',
+);
+
+$config['mappings']['QA_QuestionTagsTopics'] = array(
+    '^/askzt([0-9]+)$',
+);
+
+$config['mappings']['QA_QuestionTagsTopicsNew'] = array(
+    '^/ask/topic/([0-9]+)$',
+);
+
+
+$config['mappings']['QA_QuestionTagsTopicsList'] = array(
+    '^/ask/huati/$',
+    '^/ask/huati/p([0-9]+)/$',
+);
+
+$config['mappings']['QA_QuestionList']=array(
+    '^/ask/(.*)/(.*)',
+    '^/ask/(.*)',
+    '^/ask/T(.*)',
+    '^/askzx/(.*)'
+);
+
+
+$config['mappings']['Newhome_Home_Index']=array(
+    '^/newhome/$'
+);
+
+$config['mappings']['Newhome_Home_Redirect']=array(
+    '^/newhome/(.+)'
+);
+
+
+$config['mappings']['Home_Home']=array(
+    '^/$',
+    '^/default.*'
+);
+
+$config['mappings']['User_Broker_MyOrderInfo']=array(
+    '^/user/broker/myorder/'
+);
+
+$config['mappings']['Listing_Property_SearchMatching']=array(
+    '^/(sale)/(.*mix.*)'
+);
+
+// Sale Listing
+$config['mappings']['Finding_Sale']=array(
+    '^/(sale|sales|list)(/?)$',
+    '^/(sale|sales|list)/(.*)$'
+);
+
+
+$config['mappings']['My_Member_Favorite_All']=array(
+    '^/favorite/all/(.*)$'
+);
+
+$config['mappings']['My_Member_Favorite_XinFang']=array(
+    '^/favorite/xinfang/(.*)$'
+);
+
+$config['mappings']['My_Member_Favorite_FangYuan']=array(
+    '^/favorite/fangyuan$',
+    '^/favorite/fangyuan/(.*)$'
+);
+
+$config['mappings']['My_Member_Favorite_Community']=array(
+    '^/favorite/community$',
+    '^/favorite/community/(.*)$'
+);
+
+$config['mappings']['My_Member_Favorite_ZuFang']=array(
+    '^/favorite/zufang/(.*)$'
+);
+$config['mappings']['My_Member_Favorite_JinPu']=array(
+    '^/favorite/jinpu/(.*)$'
+);
+
+$config['mappings']['Listing_Property_Compare']=array(
+    '^/compare/property'
+);
+$config['mappings']['View_Property_Report']=array(
+    '^/report/([0-9]+)$'
+);
+$config['mappings']['View_Property_ReportConfirm']=array(
+    '^/report/confirm/([0-9]+)$'
+);
+$config['mappings']['View_Property_ReportConfirmPopup']=array(
+    '^/report/confirmpopup/([0-9]+)$'
+);
+
+$config['mappings']['Listing_Community_SearchOld']=array(
+    '^/community/list/(.*)W0QQ.*',
+    '^/community/list/(.*)',
+    '^/xiaoqu/list/(.*)W0QQ.*',
+    '^/xiaoqu/list/(.*)'
+);
+
+$config['mappings']['Listing_School_Search']=array(
+    '^/school/list/(.*)W0QQ.*',
+    '^/school/list/(.*)',
+    '^/xuexiao/list/(.*)W0QQ.*',
+    '^/xuexiao/list/(.*)'
+);
+
+$config['mappings']['Listing_Property_MetroMaps']=array(
+    '^/metromaps/(sale|rent)$'
+);
+
+$config['mappings']['Listing_Property_ConvertUri']=array(
+    '^/(listptab\.php)(.*)'
+);
+
+$config['mappings']['Listing_Property_ShortPriceProp']=array(
+    '^/shortpriceprop'
+);
+
+$config['mappings']['Listing_Property_ConditionSelectorAjax']=array(
+    '^/listing/property/condition_selector'
+);
+
+$config['mappings']['View_Property_ForbidBroker']=array(
+    '^/forbid/broker/(.*)$'
+);
+
+$config['mappings']['View_Property_ViewRecommend']=array(
+    '^/prop/recommend/([0-9]+)'
+);
+
+$config['mappings']['View_Property_ViewPropertyV2']=array(
+    '^/prop/view/([0-9]+)$',
+    '^/prop/(view2)/([0-9]+)$',
+    '^/prop/preview/([0-9]+)$',
+);
+
+$config['mappings']['View_Property_UserPublish']=array(
+        '^/prop/publish/list$',
+        '^/prop/publish/list/(.*)$'
+);
+
+$config['mappings']['View_Property_LoanCalculator']=array(
+    '^/calculator$'
+);
+
+$config['mappings']['View_Property_LoanCalculator2'] = array(//added by kakie 2011-5-10
+
+    '^/calculator/(.*)'
+);
+
+$config['mappings']['My_Register_Register']=array(
+    '^/reg',
+    '^/register'
+);
+
+$config['mappings']['My_Register_Password']=array(
+    '^/pass'
+);
+
+$config['mappings']['My_Login']=array(
+    '^/my/login'
+);
+
+$config['mappings']['My_ExtContact']=array(
+    '^/my/contact'
+);
+
+$config['mappings']['My_LoginDialog']=array(
+    '^/my/dialoglogin'
+);
+
+$config['mappings']['My_Member_HaozuMail']=array(
+    '^/member/haozumail'
+);
+
+$config['mappings']['My_Member_CommissionProp']=array(
+    '^/member/postprop'
+);
+$config['mappings']['My_Member_ChooseBroker']=array(
+    '^/member/choosebroker'
+);
+$config['mappings']['My_Member_CommissionSucc']=array(
+    '^/member/postfinish'
+);
+$config['mappings']['My_Member_ManageProp']=array(
+    '^/member/manageprops'
+);
+$config['mappings']['My_Member_CommissionLog']=array(
+    '^/member/commissionlog'
+);
+$config['mappings']['My_MemberNew_BrokerPropManage']=array(
+    '^/member/brokerpropmanage'
+);
+$config['mappings']['My_Member_BrokerPropManage']=array(
+    '^/membernew/brokerpropmanage'
+);
+$config['mappings']['listing_broker_brokerlist']=array(
+    '^/broker/list'
+);
+$config['mappings']['listing_broker_Tycoon']=array(
+    '^/(tycoon)/(.*)W0QQ.*',
+    '^/(tycoon)/(.*)',
+    '^/tycoon'
+);
+$config['mappings']['listing_broker_brokerchart']=array(
+    '^/brokerchart'
+);
+
+$config['mappings']['listing_broker_LastGetComment']=array(
+    '^/lastgetcomment'
+);
+
+$config['mappings']['listing_Store']=array(
+    '^/store/'
+);
+$config['mappings']['Member_CommissionHome']=array(
+    '^/commission'
+);
+$config['mappings']['My_Broker_CommissionHistory']=array(
+    '^/member/commissionhistory'
+);
+$config['mappings']['My_Broker_CommissionRange']=array(
+    '^/member/commissionrange'
+);
+
+//added by yyang,used to add the area management
+$config['mappings']['My_Agent_AgentDistrict']=array(
+    '^/agent/district'
+);
+$config['mappings']['My_Agent_AgentReport']=array(
+    '^/agent/report/(stores|brokers)'
+);
+
+$config['mappings']['View_Property_AgencyStore']=array(
+    '^/agency/store/([0-9]+)W0QQ',
+    '^/agency/store/([0-9]+)$'
+);
+
+$config['mappings']['Community_CommunityView']=array(
+    '^/community/view/([0-9]+)W0QQ',
+    '^/community/view/([0-9]+)$',
+    '^/xiaoqu/overview/([0-9]+)$'
+);
+
+$config['mappings']['Community_CommunityRound']=array(
+    '^/community/round/([0-9]+)$',
+    '^/xiaoqu/round/([0-9]+)$'
+);
+
+$config['mappings']['Community_CommunityPhotoList']=array(
+    '^/community/photos/(a|b)/([0-9]+)$',
+    '^/xiaoqu/photos/(a|b)/([0-9]+)$'
+);
+
+$config['mappings']['Community_CommunityPhotoDetails']=array(
+    '^/community/photos/(a|b)/details/([0-9]+)_([0-9]+)$',
+    '^/xiaoqu/photos/(a|b)/details/([0-9]+)_([0-9]+)$'
+);
+
+$config['mappings']['Community_CommunityDetails']=array(
+    '^/community/details/([0-9]+)$',
+    '^/xiaoqu/details/([0-9]+)$'
+);
+
+$config['mappings']['Community_PriceTrends']=array(
+    '^/community/trends/([0-9]+)',
+    '^/xiaoqu/trends/([0-9]+)'
+);
+$config['mappings']['Community_TodayPrice']=array(
+    '^/community/today/([0-9]+)$',
+    '^/xiaoqu/today/([0-9]+)$'
+);
+
+$config['mappings']['Community_PropList']=array(
+    '^/community/props/(sale|rent)/([0-9]+)',
+    '^/xiaoqu/props/(sale|rent)/([0-9]+)'
+);
+$config['mappings']['Community_CommunityQa']=array(
+    '^/community/qa/([0-9]+)W0QQ',
+    '^/community/qa/([0-9]+)$'
+);
+
+$config['mappings']['SEO_LatestProp'] = array(
+    '^/fang/',
+    '^/fang/W0QQ'
+);
+$config['mappings']['SEO_LatestQuestion'] = array(
+    '^/wenti/',
+    '^/wenti/W0QQ'
+);
+$config['mappings']['Listing_Community_Redirect']=array(
+    '/community/(listcomm-)(.*)',
+    '/community/(listcomm\.php)(.*)'
+);
+
+$config['mappings']['Community_CommunityForum']=array(
+    '^/community/forum/([0-9]+)',
+    '^/xiaoqu/forum/([0-9]+)'
+);
+
+$config['mappings']['Community_Chart_PriceTrends']=array(
+    '^/community/chart/price-trends/',
+    '^/community/chart2/price-trends/'
+);
+
+$config['mappings']['Community_CorrectMap']=array(
+    '^/community/correct/map/([0-9]+)$'
+);
+
+$config['mappings']['Community_CorrectInfo']=array(
+    '^/community/correct/info/([0-9]+)$'
+);
+
+$config['mappings']['Community_CorrectMapSuccess']=array(
+    '^/community/correct/success/([0-9]+)$'
+);
+
+// maps
+$config['mappings']['Metro_MetroLineTracker']=array(
+    '^/metro/line-tracker(/(save))?$'
+);
+$config['mappings']['Metro_MetroStationPicker']=array(
+    '^/metro/station-picker(/(save))?$'
+);
+$config['mappings']['Metro_CommunityDistanceMeasure']=array(
+    '^/metro/community-distance-measure(/(save))?$'
+);
+
+$config['mappings']['Map2_Findding']=array(
+    '^/(map|ditu)/(sale|rent)(/|)$',
+    '^/(map2|ditu2)/(sale|rent)/$',
+    '^/map3/?$'
+);
+
+$config['mappings']['Map2_CustomTracker']=array(
+    '^/map/custom/([0-9]+)/([0-9]+)/'
+);
+
+$config['mappings']['Map2_BuildMarkers']=array(
+    '^/map/markers/([0-9]+)$'
+);
+
+$config['mappings']['Map2_Convert']=array(
+    '^/(map|ditu)/convert?.+'
+);
+
+$config['mappings']['Map2_RunPoint']=array(
+    '^/(map|ditu)/runpoint?.+'
+);
+
+$config['mappings']['Map2_RunAreaPoint']=array(
+    '^/(map|ditu)/runareapoint?.+'
+);
+
+$config['mappings']['Map2_SavePoint']=array(
+    '^/(map|ditu)/savepoint?.+'
+);
+
+$config['mappings']['Map2_SaveAreaPoint']=array(
+    '^/(map|ditu)/saveareapoint?.+'
+);
+
+// map findding
+$config['mappings']['Map_MapFindding']=array(
+    '^/(map|ditu)/(sale|rent)/$'
+);
+
+$config['mappings']['Map_MapLucene']=array(
+    '^/(map|ditu)/search?.+'
+);
+
+$config['mappings']['Map_MapBlock']=array(
+    '^/(map|ditu)/block?.+'
+);
+
+$config['mappings']['Map_MapProp']=array(
+    '^/(map|ditu)/prop?.+'
+);
+
+// promotions
+$config['mappings']['Promotion_ListingAd']=array(
+    '^/promotion/listing_ad(W0QQ.*)?$'
+);
+$config['mappings']['Listing_Property_GugeLife']=array(
+    '^/feed/guge/life.tsv(\.zip)?$'
+);
+
+$config['mappings']['Listing_Property_GugeLifeByCreation']=array(
+    '^/feed/guge/life2.tsv(\.zip)?$'
+);
+
+$config['mappings']['My_Broker_OrderList']=array(
+    '^/my/member/orderlist$'
+);
+
+$config['mappings']['Secretary_Secretary']=array(
+    '^/sec'
+);
+
+$config['mappings']['My_Broker_Points']=array(
+    '^/broker/point'
+);
+$config['mappings']['Go_PageRedirect']=array(
+    '^/go/([0-9a-zA-Z]+)$'
+);
+$config['mappings']['Go_TinyUrl']=array(
+    '^/tinyurl$'
+);
+$config['mappings']['Suvery_Suvery']=array(
+    '^/suvery/'
+);
+
+$config['mappings']['year2nd_index']=array(
+    '^/year2nd$'
+);
+
+config['mappings']['Trust_TrustUnion']=array(
+    '^/trustunion'
+);
+
+$config['mappings']['Favorprop_Favorprop']=array(
+    '^/favorprop/'
+);
+
+$config['mappings']['Favorprop_Favorpropbox']=array(
+    '^/favorpropbox/'
+);
+
+$config['mappings']['suvery_UserSurvey']=array(
+    '^/survey/customersatisfy/(.*)'
+);
+
+$config['mappings']['suvery_star']=array(
+    '^/survey/star/'
+);
+
+$config['mappings']['suvery_add']=array(
+    '^/survey/add/'
+);
+
+$config['mappings']['My_Broker_MyRevert']=array(
+    '^/broker/myrevert'
+);
+$config['mappings']['My_Broker_OpenEd']=array(
+    '^/member/broker/checked/'
+);
+$config['mappings']['My_Broker_CheckOpen']=array(
+    '^/member/broker/check/'
+);
+
+$config['mappings']['My_Broker_UpBrokerImg']=array(
+    '^/member/broker/upimg/preview/(1|2|3|4)/'
+);
+
+$config['mappings']['My_Broker_SaveBrokerImg']=array(
+    '^/member/broker/upimg/save/(1|2|3|4)/'
+);
+
+$config['mappings']['My_Broker_Index']=array(
+    '^/member/broker/index/(.*)'
+);
+
+$config['mappings']['My_Broker_Protocol']=array(
+    '^/member/broker/protocol'
+);
+
+$config['mappings']['Community_CommunityImpression']=array(
+    '^/community/impression/([0-9]+)'
+);
+
+$config['mappings']['Community_CommunityViewV3']=array(
+    '^/community/v3/view/([0-9]+)W0QQ',
+    '^/community/v3/view/([0-9]+)$',
+    '^/community/wall/([0-9]+)W0QQ',
+    '^/community/wall/([0-9]+)$',
+    '^/community/actionstream/([0-9]+)W0QQ',
+    '^/community/actionstream/([0-9]+)$'
+);
+
+$config['mappings']['Community_CommunityViewFeed']=array(
+    '^/community/m/([0-9]+)$'
+);
+
+$config['mappings']['Tools_Draw']=array(
+    '^/tools/draw/'
+);
+
+$config['mappings']['SEO_SiteMap']=array(
+    '^/sitemap/'
+);
+
+$config['mappings']['My_Member_Blank']=array(
+    '^/blank/list/(.*)$',
+    '^/blank/propertys/(.*)$',
+    '^/blank/brokers/(.*)$',
+    '^/prop/blankproperty'
+);
+$config['mappings']['My_Member_BlankCommunity']=array(
+    '^/blank/communitys/(.*)$',
+    '^/prop/blankcommunity'
+);
+
+$config['mappings']['Themes_Themes']=array(
+    '^/topic/(rent|sale)/([0-9a-z]{8})/([0-9]+)$'
+);
+
+$config['mappings']['Help_HelpHome']=array(
+    '^/help$'
+);
+$config['mappings']['Help_HelpList']=array(
+    '^/help/type/([0-9]+)'
+);
+$config['mappings']['Help_HelpArticle']=array(
+    '^/help/question/([0-9]+)$'
+);
+$config['mappings']['Help_HelpSearch']=array(
+    '^/help/search/'
+);
+
+$config['mappings']['My_Member_ManagePropCond']=array(
+    '^/member/manpropcond/$'
+);
+$config['mappings']['My_Member_SavePropCondition']=array(
+    '^/member/savepropcond/$'
+);
+
+$config['mappings']['Listing_Property_SearchCookie']=array(
+    '^/(cookie)/(.*)W0QQ.*',
+    '^/(cookie)/(.*)'
+);
+
+$config['mappings']['View_Property_HasViewed']=array(
+    '^/prop/viewed/'
+);
+$config['mappings']['View_Property_HasViewedMy']=array(
+        '^/prop/myviewed/',
+        '^/prop/myviewed/(.*)'
+);
+
+$config['mappings']['View_Property_Collection']=array(
+    '^/prop/collection/(.*)',
+    '^/prop/collection?(.*)',
+    '^/member/$'
+);
+
+$config['mappings']['Home_NationalHome']=array(
+    '^/index/',
+    '^/index\.html'
+);
+
+$config['mappings']['Gallery_View']=array(
+    '^/gallery/view/(sale|rent)/([0-9]+)$',
+    '^/gallery/view/(sale|rent)/([0-9]+)/(.*)W0QQ',
+    '^/gallery/view/(sale|rent)/([0-9]+)/(.*)'
+);
+
+$config['mappings']['My_Broker_CommManage']=array(
+    '^/broker/comm_manage'
+);
+$config['mappings']['My_Broker_CommAll']=array(
+    '^/broker/comm_all'
+);
+
+$config['mappings']['Listing_Community_Suggest']=array(
+    '^/community/suggest'
+);
+$config['mappings']['My_Broker_Group_ExpertApply']=array(
+    '^/broker/group/expert/apply'
+);
+$config['mappings']['My_Broker_Group_ExpertMessage']=array(
+    '^/broker/group/expert/message'
+);
+$config['mappings']['My_Broker_Group_ExpertHome']=array(
+    '^/broker/group/expert/home'
+);
+$config['mappings']['My_Broker_Group_ExpertManage']=array(
+    '^/broker/group/expert/manage'
+);
+
+$config['mappings']['My_Broker_Group_ExpertActivity']=array(
+    '^/broker/group/expert/activity/([0-9]+)'
+);
+$config['mappings']['My_Broker_Group_List']=array(
+    '^/broker/group/list'
+);
+$config['mappings']['Member_Profile']=array(
+    '^/member/([0-9]+)/profile/'
+);
+
+$config['mappings']['Member_Friends']=array(
+    '^/member/([0-9]+)/friends'
+);
+
+$config['mappings']['Member_FriendshipConfirm']=array(
+    '^/member/friendship/([0-9]+)/(confirm|ignore)'
+);
+
+$config['mappings']['Member_FriendshipRemove']=array(
+    '^/member/friendship/([0-9]+)/remove'
+);
+
+$config['mappings']['View_Property_FalseBulletin']=array(
+    '^/view/falsebulletin',
+    '^/view/falsebulletin/(.*)W0QQ'
+);
+
+$config['mappings']['Community_ConcernedCommunity']=array(
+    '^/community/concerned'
+);
+
+$config['mappings']['My_Broker_BulletinBoard']=array(
+    '^/member/bulletinboard/([0-9]+)$',
+    '^/member/bulletinboard'
+);
+
+// earth
+$config['mappings']['Widget_Earth']=array(
+    '^/earth/vote/(.*)$'
+);
+
+$config['mappings']['Christmas_2009_Index']=array(
+    '^/0912_christmas/(shanghai|beijing)/$'
+);
+$config['mappings']['Christmas_2009_MyBox']=array(
+    '^/0912_christmas/mybox/$',
+    '^/0912_christmas/mybox/contact/$'
+);
+
+$config['mappings']['Christmas_2009_Prize']=array(
+    '^/0912_christmas/prize/([0-9]+)'
+);
+
+$config['mappings']['My_Broker_BulletinBoard']=array(
+    '^/member/bulletinboard/([0-9]+)$',
+    '^/member/bulletinboard'
+);
+
+$config['mappings']['My_Broker_ManageMedal']=array(
+    '^/member/medal/manage$'
+);
+
+$config['mappings']['My_Broker_ShowMedal']=array(
+    '^/member/medal/show$'
+);
+
+$config['mappings']['My_Broker_ShowHonesty']=array(
+    '^/member/honesty/show'
+);
+
+$config['mappings']['My_Broker_PayLogs']=array(
+    '^/member/broker/paylogs'
+);
+
+$config['mappings']['SEO_LetterIndex']=array(
+    '^/letters/([A-Z]|[a-z]|[0-9])/$',
+    '^/letters/([A-Z]|[a-z]|[0-9])/W0QQ.*'
+);
+
+
+
+// 室内图错误原因反馈V1.0
+$config['mappings']['My_Broker_UnpassedPicsFeedbackSec']=array(
+    '^/member/broker/unpassedpicsfeedback$'
+);
+
+$config['mappings']['User_Broker_UnPassedPic']=array(
+    '^/user/broker/unpassedpic/W0QQ',
+    '^/user/broker/unpassedpic/$'
+);
+
+$config['mappings']['Map2_ActionFeed']=array(
+    '^/map/(sale|rent)/feed/'
+);
+
+$config['mappings']['Listing_Property_Similar']=array(
+    '^/(similar|like)/'
+);
+
+$config['mappings']['My_Broker_Property_SaleStep1']=array(
+    '^/member/broker/property/sale/step1'
+);
+$config['mappings']['My_Broker_Property_SaleStep2']=array(
+    '^/member/broker/property/sale/step2'
+);
+$config['mappings']['My_Broker_Property_SaleStep3']=array(
+    '^/member/broker/property/sale/step3'
+);
+
+$config['mappings']['My_Broker_Property_RentStep1']=array(
+    '^/member/broker/property/rent/step1'
+);
+$config['mappings']['My_Broker_Property_RentStep2']=array(
+    '^/member/broker/property/rent/step2'
+);
+$config['mappings']['My_Broker_Property_RentStep3']=array(
+    '^/member/broker/property/rent/step3'
+);
+
+$config['mappings']['Tools_Confirm']=array(
+    '^/tools/confirm/'
+);
+
+$config['mappings']['Payment_Order']=array(
+    '^/payment/order/(selectcombo|confirm|paymethod)/'
+);
+
+$config['mappings']['Payment_Unionpay_Pay']=array(
+    '^/payment/unionpay/(selectcombo|result|success|send)/'
+);
+
+$config['mappings']['Payment_99bill_Pay']=array(
+    '^/payment/99bill/(result|success|send)/'
+);
+
+$config['mappings']['Payment_Order99']=array(
+    '^/payment/order99/(order|pay|editorder)'
+);
+
+$config['mappings']['Payment_Tenpay_Pay']=array(
+    '^/payment/tenpay/(result|success|send)/'
+);
+
+$config['mappings']['Community_Chart_CommunityPropertys']=array(
+    '^/community/chart/propertys/'
+);
+
+$config['mappings']['Tools_Propscore']=array(
+    '^/tools/propscore'
+);
+
+$config['mappings']['Tools_ListingTool']=array(
+    '^/tools/listing'
+);
+$config['mappings']['Tools_ShowRank']=array(
+    '^/tools/showrank'
+);
+
+$config['mappings']['Tools_RankIt']=array(
+    '^/tools/rankit'
+);
+
+//memcache
+$config['mappings']['Tools_Memcache']=array(
+    '^/tools/memcache/'
+);
+//memcache
+$config['mappings']['Tools_Varnish']=array(
+    '^/tools/varnish/'
+);
+
+//memcache
+$config['mappings']['Tools_Monitor']=array(
+    '^/tools/monitor/'
+);
+
+$config['mappings']['Tools_MidPriceMonitor']=array(
+    '^/tools/midprice/'
+);
+
+$config['mappings']['Tools_PhpFunctionApi']=array(
+    '^/tools/phpfunctionapi'
+);
+
+$config['mappings']['Listing_Property_PersonalSorting']=array(
+    '^/personal_sale'
+);
+
+$config['mappings']['My_Agent_AgentLog']=array(
+    '^/agent/log/'
+);
+
+//search keyword
+$config['mappings']['Search_Keyword']=array(
+    '^/search/keyword/'
+);
+
+$config['mappings']['Ajax_CommunityListNew'] = array(
+    '^/ajax/communitynew/list/'
+);
+
+$config['mappings']['My_Member_V2_News']=array(
+    '^/member/([0-9]+)/news/'
+);
+
+$config['mappings']['My_Broker_Invite']=array(
+    '^/broker/invite'
+);
+
+$config['mappings']['Shop_v1_Home']=array(
+    '^/shop/view/([0-9]+)'
+);
+
+$config['mappings']['Shop_v1_Profile']=array(
+    '^/shop/profile/([0-9]+)'
+);
+
+$config['mappings']['Shop_v1_PropertyList']=array(
+    '^/shop/list/(sale|rent)/([0-9]+)/(.*)W0QQ.*',
+    '^/shop/list/(sale|rent)/([0-9]+)/(.*)',
+    '^/shop/(salelist|rentlist)/([0-9]+)'
+);
+
+$config['mappings']['Shop_v1_Photo']=array(
+    '^/shop/photo/([0-9]+)'
+);
+
+$config['mappings']['Shop_v1_DiaryList']=array(
+    '^/shop/diarylist/([0-9]+)'
+);
+$config['mappings']['Shop_v1_Diary']=array(
+    '^/shop/diary/([0-9]+)'
+);
+$config['mappings']['My_Broker_Rank']=array(
+    '^/broker/report'
+);
+
+$config['mappings']['My_Broker_DelRepeatPic']=array(
+    '^/broker/repeat/del'
+);
+
+$config['mappings']['My_Message']=array(
+    '^/my/message'
+);
+
+$config['mappings']['My_Member_V2_MyThread']=array(
+    '^/mythread/(.*)W0QQ.*',
+    '^/mythread/(.*)'
+);
+
+$config['mappings']['My_Member_V2_MyPost']=array(
+    '^/mypost/(.*)W0QQ.*',
+    '^/mypost/(.*)'
+);
+//我收藏的帖子页面
+$config['mappings']['My_Member_V2_MyFavThread']=array(
+    '^/myfavthread/(.*)W0QQ.*',
+    '^/myfavthread/(.*)'
+);
+//修改资料
+$config['mappings']['My_Member_V2_ModifyInfo']=array(
+    '^/member/(modify)/info/'
+);
+$config['mappings']['My_Member_V2_ModifyHeadPic']=array(
+    '^/member/(modify)/headpic/'
+);
+$config['mappings']['My_Member_V2_ModifySignature']=array(
+    '^/member/(modify)/signature/'
+);
+$config['mappings']['My_Member_V2_ModifyPWD']=array(
+    '^/member/(modify)/pwd/'
+);
+$config['mappings']['My_Member_V2_ModifyMail']=array(
+    '^/member/(modify)/mail/'
+);
+$config['mappings']['My_Member_V2_ModifyMobile'] = array(
+    '^/member/(modify)/mobile/'
+);
+//我收藏的小区
+$config['mappings']['My_Member_V2_MyFavComm']=array(
+    '^/member/myfavcomm/'
+);
+//小区图片上传
+$config['mappings']['Community_CommunityPhotoCommit']=array(
+    '^/community/photos/(a|b)/commit/([0-9]+)$',
+    '^/xiaoqu/photos/(a|b)/commit/([0-9]+)$'
+);
+//小区图片上传成功提示
+$config['mappings']['Community_CommunityPhotoCommitOk']=array(
+    '^/community/photos/(a|b)/commitok/([0-9]+)$',
+    '^/xiaoqu/photos/(a|b)/commitok/([0-9]+)$'
+);
+//取消降价通知订阅
+$config['mappings']['My_Member_Subscribe_PriceMailCancle']=array(
+    '^/subscribe/price/cancle/(.*)'
+);
+$config['mappings']['My_Member_Subscribe_PriceMailManage']=array(
+    '^/subscribe/price/manage/(.*)'
+);
+$config['mappings']['My_Member_Subscribe_CommPropMailManage']=array(
+    '^/subscribe/commprop/manage/(.*)'
+);
+$config['mappings']['My_Member_Subscribe_MailManage']=array(
+    '^/subscribe/mail/manage/'
+);
+//user
+//经纪人诚信详组1?7
+$config['mappings']['User_Broker_ShowHonesty']=array(
+    '^/user/honesty/show'
+);
+$config['mappings']['User_Broker_OpenEd']=array(
+    '^/user/broker/checked/'
+);
+//=====待优匄1?7==原因：复制奶牛后台?1?7?功能不明确?1?7==//
+$config['mappings']['User_Broker_Notopen'] = array(//added by kakie 2011-6-30
+    '^/user/broker/(notopen)/?$',
+    '^/user/broker/(grouptip)/?$'
+);
+$config['mappings']['User_Broker_Points']=array(
+    '^/user/broker/point'
+);
+//qa
+$config['mappings']['User_Broker_QAGrades']=array(
+    '^/user/broker/qagrades'
+);
+//问答专家申请
+$config['mappings']['User_Broker_QAExpertApply']=array(
+    '^/user/broker/expertapply/(.*)'
+);
+//问答专家申请结果
+$config['mappings']['User_Broker_QAExpertApplyRtn']=array(
+    '^/user/broker/expertapplyrtn/(.*)'
+);
+
+$config['mappings']['User_Broker_ShowMedal']=array(
+    '^/user/medal/show$'
+);
+
+
+//服务评价
+
+$config['mappings']['User_Broker_ServiceEvaluation']=array(
+    '^/user/evaluation/service/?$',
+    '^/user/evaluation/service/W0QQpZ([1-9]+)/?$'
+);
+//有效展开评论+有效隐藏评论--合并
+
+$config['mappings']['User_Broker_TfEvaluation']=array(
+    '^/user/evaluation/Tf/'
+);
+//失效评论
+$config['mappings']['User_Broker_SxEvaluation']=array(
+    '^/user/evaluation/Sx/'
+);
+
+$config['mappings']['User_Broker_ManageMedal']=array(
+    '^/user/medal/manage$'
+);
+//新版经纪人发表的帖子
+$config['mappings']['User_Broker_MyThreadPub']=array(
+    '^/user/broker/mythreadpub'
+);
+//新版经纪人收藏的帖子
+$config['mappings']['User_Broker_MyThreadFav']=array(
+    '^/user/broker/mythreadfav'
+);
+//新版经纪人回复的帖子
+$config['mappings']['User_Broker_MyRevert']=array(
+    '^/user/broker/myrevert'
+);
+$config['mappings']['User_Broker_Property_SaleStep1']=array(
+    '^/user/broker/property/sale/step1'
+);
+$config['mappings']['User_Broker_Property_SaleStep2']=array(
+    '^/user/broker/property/sale/step2'
+);
+$config['mappings']['User_Broker_Property_SaleStep3']=array(
+    '^/user/broker/property/sale/step3'
+);
+
+$config['mappings']['User_Broker_Property_ClearVarnish']=array(
+    '^/user/broker/property/clearvarnish'
+);
+
+$config['mappings']['User_Broker_Property_RentStep1']=array(
+    '^/user/broker/property/rent/step1'
+);
+$config['mappings']['User_Broker_Property_RentStep2']=array(
+    '^/user/broker/property/rent/step2'
+);
+$config['mappings']['User_Broker_Property_RentStep3']=array(
+    '^/user/broker/property/rent/step3'
+);
+$config['mappings']['User_Broker_BrokerStatistics']=array(
+    '^/user/brokerstatistics'
+);
+$config['mappings']['User_Broker_Rank']=array(
+    '^/user/broker/report'
+);
+$config['mappings']['User_Payment_Order']=array(
+    '^/user/payment/order/(selectcombo|confirm|paymethod)/'
+);
+$config['mappings']['User_Payment_Unionpay_Pay']=array(
+    '^/user/payment/unionpay/(selectcombo|result|success|send)/'
+);
+
+$config['mappings']['User_Payment_99bill_Pay']=array(
+    '^/user/payment/99bill/(result|success|send)/'
+);
+
+$config['mappings']['User_Payment_Tenpay_Pay']=array(
+    '^/user/payment/tenpay/(result|success|send)/'
+);
+$config['mappings']['User_Broker_BulletinBoard']=array(
+    '^/user/bulletinboard/([0-9]+)$',
+    '^/user/bulletinboard'
+);
+$config['mappings']['Member_CommissionHome']=array(
+    '^/commission'
+);
+$config['mappings']['User_Broker_CommissionHistory']=array(
+    '^/user/commissionhistory'
+);
+$config['mappings']['User_Broker_CommissionRange']=array(
+    '^/user/commissionrange'
+);
+$config['mappings']['User_Broker_BrokerPropManage']=array(
+    '^/user/brokerpropmanage'
+);
+
+//奶牛1.13经纪人帐号管琄1?7 wade
+
+
+$config['mappings']['User_Broker_ModifyPassword']=array(
+    '^/user/modify/password'
+);
+
+$config['mappings']['User_Broker_Card']=array(
+    '^/user/card'
+);
+
+$config['mappings']['User_Broker_ModifyBrokerInfo']=array(
+    '^/user/modify/brokerinfo'
+);
+
+// 付费历史
+$config['mappings']['User_Broker_PayLogs']=array(
+    '^/user/broker/paylogs'
+);
+$config['mappings']['User_Broker_OrderList']=array(
+    '^/user/broker/orderlist'
+);
+//临时访问小区图片路径
+$config['mappings']['Community_CommunityPhotoDetails2']=array(
+    '^/community/photos2/(a|b)/details/([0-9]+)_([0-9]+)$',
+    '^/xiaoqu/photos2/(a|b)/details/([0-9]+)_([0-9]+)$',
+    '^/community/photos2/(a|b)/details/$'
+);
+//临时访问小区图片列表
+$config['mappings']['Community_CommunityPhotoList2']=array(
+    '^/community/photos2/(a|b)/([0-9]+)',
+    '^/xiaoqu/photos2/(a|b)/([0-9]+)',
+    '^/community/photos2/(a|b)/([0-9]+)W0QQ.*',
+    '^/xiaoqu/photos2/(a|b)/([0-9]+)W0QQ.*'
+);
+//行情频道
+$config['mappings']['Market_Chart']=array(
+    '^/market/chart/'
+);
+$config['mappings']['Market_GetPrice']=array(
+    '^/market/getprice/'
+);
+$config['mappings']['Market_Home']=array(
+    '^/market/$',
+    '^/market/W0QQ',
+    '^/market/([a-z0-9]+)/$',
+    '^/market/([a-z0-9]+)/W0QQ'
+);
+
+//经纪人个人介组1?7
+$config['mappings']['User_Broker_Introduction']=array(
+    '^/user/broker/introduction'
+);
+
+//经纪人职业能劄1?7
+$config['mappings']['User_Broker_Ability']=array(
+    '^/user/broker/ability'
+);
+//经纪人职业能劄1?7
+$config['mappings']['User_Broker_Areas']=array(
+    '^/user/broker/areas'
+);
+
+//经纪人职业特镄1?7
+$config['mappings']['User_Broker_Expertise']=array(
+    '^/user/broker/expertise'
+);
+
+$config['mappings']['User_Broker_ShopProp']=array(
+    '^/user/broker/shopprop'
+);
+
+//经纪人设置店铺风栄1?7
+$config['mappings']['User_Broker_SetStyle']=array(
+    '^/user/broker/setstyle'
+);
+
+//经纪人设置自定义店铺背景
+$config['mappings']['User_Broker_CustomBg']=array(
+    '^/user/broker/custombg'
+);
+
+//经纪人设置友情店铄1?7
+$config['mappings']['User_Broker_FriendshipStore']=array(
+    '^/user/broker/friendshipstore'
+);
+//小区房型图列衄1?7
+$config['mappings']['Community_CommunityModelList']=array(
+    '^/community/photos/model/([0-9]+)$',
+    '^/community/photos/model/([0-9]+)W0QQ'
+);
+
+//小区房型图单顄1?7
+$config['mappings']['Community_CommunityModelDetails']=array(
+    '^/community/photos/model/details/([0-9]+)$',
+    '^/community/photos/model/details/([0-9]+)W0QQ',
+    '^/xiaoqu/photos/model/details/([0-9]+)$'
+);
+//二手房关联房源推荐请求地址
+$config['mappings']['Rec_Sale_PageRec']=array(
+    '^/rec/sale/pagerec'
+);
+
+//二手房个性化房源推荐请求地址
+$config['mappings']['Rec_Sale_HomeRec']=array(
+    '^/rec/sale/homerec'
+);
+
+//租房关联房源推荐请求地址
+$config['mappings']['Rec_Rent_PageRec']=array(
+    '^/rec/rent/pagerec$'
+);
+
+//租房关联房源推荐（基于距离）请求地址
+$config['mappings']['Rec_Rent_PageRecWithDistance']=array(
+    '^/rec/rent/pagerecwithdistance/'
+);
+
+//租房个性化房源推荐请求地址
+$config['mappings']['Rec_Rent_HomeRec']=array(
+    '^/rec/rent/homerec'
+);
+
+//楼盘关联推荐请求地址
+$config['mappings']['Rec_Loupan_PageRec']=array(
+    '^/rec/loupan/pagerec'
+);
+
+//楼盘关联推荐请求地址
+$config['mappings']['Rec_Loupan_ProfileRec']=array(
+    '^/rec/loupan/profilerec/$'
+);
+
+//商铺出租关联推荐请求地址
+$config['mappings']['Rec_Jinpu_Shop_Zu_PageRec']=array(
+    '^/rec/jinpu/shop/zu/pagerec/'
+);
+
+//商铺出售关联推荐请求地址
+$config['mappings']['Rec_Jinpu_Shop_Shou_PageRec']=array(
+    '^/rec/jinpu/shop/shou/pagerec/'
+);
+
+//写字楼出租关联推荐请求地址
+$config['mappings']['Rec_Jinpu_Office_Zu_PageRec']=array(
+    '^/rec/jinpu/office/zu/pagerec/'
+);
+
+//写字楼出售关联推荐请求地址
+$config['mappings']['Rec_Jinpu_Office_Shou_PageRec']=array(
+    '^/rec/jinpu/office/shou/pagerec/'
+);
+
+//商业地产关联推荐请求地址
+$config['mappings']['Rec_Jinpu_PageRec']=array(
+    '^/rec/jinpu/pagerec/'
+);
+
+//小区关联推荐请求地址
+$config['mappings']['Rec_Comm_PageRec']=array(
+    '^/rec/comm/pagerec/'
+);
+
+//小区个性化推荐请求地址
+$config['mappings']['Rec_Comm_HomeRec']=array(
+    '^/rec/comm/homerec/$'
+);
+
+//楼盘个性化推荐请求地址
+$config['mappings']['Rec_Loupan_HomeRec']=array(
+    '^/rec/loupan/homerec'
+);
+
+//二手房基于profile的推荐
+$config['mappings']['Rec_Sale_ProfileRec']=array(
+    '^/rec/sale/profilerec/'
+);
+
+//二手房关联房源基于小区的推荐请求地址
+$config['mappings']['Rec_Sale_PropRecWithComm']=array(
+    '^/rec/sale/proprecwithcomm/'
+);
+
+//二手房关联房源基于距离的推荐请求地址
+$config['mappings']['Rec_Sale_PropRecWithDistance']=array(
+    '^/rec/sale/proprecwithdistance/'
+);
+
+//二手房推荐请求地址
+$config['mappings']['Rec_BI_Sale_PageRec']=array(
+    '^/rec/bi/sale/pagerec$'
+);
+
+//二手房附近推荐请求地址
+$config['mappings']['Rec_BI_Sale_PageRecNearby']=array(
+    '^/rec/bi/sale/pagerecnearby/$'
+);
+
+//BI二手房推荐请求地址
+$config['mappings']['Rec_SaleRec']=array(
+    '^/rec/salerec'
+);
+
+//二手房BI新推荐请求地址
+$config['mappings']['Rec_BINewRec']=array(
+    '^/rec/binewrec'
+);
+
+//非个性化推荐接口
+$config['mappings']['Rec_PropRec']=array(
+    '^/rec/proprec'
+);
+
+//二手房推荐统一接口
+$config['mappings']['Rec_BigRec']=array(
+    '^/rec/bigrec'
+);
+
+//二手房ID推荐外部接口
+$config['mappings']['Rec_SaleIDRec']=array(
+    '^/rec/sale/idrec'
+);
+
+//二手房条件推荐外部接口
+$config['mappings']['Rec_SaleItemRec']=array(
+    '^/rec/sale/itemrec'
+);
+
+//租房房ID推荐外部接口
+$config['mappings']['Rec_RentIDRec']=array(
+    '^/rec/rent/idrec'
+);
+
+//二手房默认图
+$config['mappings']['Rec_GetImg']=array(
+    '^/rec/getimg'
+);
+
+//从?1?7?行证登陆返回的地址
+$config['mappings']['Home_Verify']=array(
+    '^/user/verify/*'
+);
+
+//从?1?7?行证?1?7?1?7出返回的地址
+$config['mappings']['Home_Logout']=array(
+    '^/logout'
+);
+//登录iframe
+$config['mappings']['Account_Login']=array(
+    '^/account/login/$'
+);
+//登录成功
+$config['mappings']['Account_LoginSuccess']=array(
+    '^/account/loginsuccess/'
+);
+//注册iframe
+$config['mappings']['Account_Register']=array(
+    '^/account/register/$'
+);
+//注册成功
+$config['mappings']['Account_RegisterSuccess']=array(
+    '^/account/registersuccess/'
+);
+
+$config['mappings']['Tools_PngFix']=array(
+    '^/iepngfix.htc$'
+);
+//系统消息
+$config['mappings']['User_Broker_SystemMessages']=array(
+    '^/user/broker/systemmessages/([0-9]+)$',
+    '^/user/broker/systemmessages'
+);
+
+//好友推荐
+$config['mappings']['User_Broker_PossibleFriends']=array(
+    '^/user/broker/possiblefriends/'
+);
+//新版好友
+$config['mappings']['User_Broker_StoreFriends']=array(
+    '^/user/broker/storefriends/([0-9]+)$',
+    '^/user/broker/storefriends/'
+);
+
+//查找经纪亄1?7 added by kakie 2011-7-25
+$config['mappings']['User_Broker_FindBroker']=array(
+    '^/user/broker/findbroker/([0-9]+)$',
+    '^/user/broker/findbroker/'
+);
+//个人资料
+$config['mappings']['User_Broker_BrokerInfo']=array(
+    '^/user/broker/brokerinfo'
+);
+//个人资料-头像修改
+$config['mappings']['User_Broker_BrokerHeadImg']=array(
+    '^/user/broker/brokerheadimg'
+);
+//个人资料-email修改
+$config['mappings']['User_Broker_BrokerEmail']=array(
+    '^/user/broker/brokeremail'
+);
+//经纪人后台基本资斄1?7
+$config['mappings']['User_Broker_Profile']=array(
+    '^/user/broker/profile'
+);
+//经纪人后台我的照牄1?7
+$config['mappings']['User_Broker_MyPic']=array(
+    '^/user/broker/mypic'
+);
+
+//经纪人后台照片PK
+$config['mappings']['User_Broker_PkPic']=array(
+    '^/user/broker/pk/pic'
+);
+//经纪人后台照片PK提示
+$config['mappings']['User_Broker_PkTips']=array(
+    '^/user/broker/pk/tips'
+);
+//经纪人后台照片PK排行榄1?7
+$config['mappings']['User_Broker_PkRank']=array(
+    '^/user/broker/pk/rank'
+);
+//经纪人后台照片PK我的票数
+$config['mappings']['User_Broker_PkVotes']=array(
+    '^/user/broker/pk/votes'
+);
+//身份认证
+$config['mappings']['User_Broker_Authentication']=array(
+    '^/user/broker/authentication'
+);
+
+//经纪人揽客?1?7?试
+$config['mappings']['User_Broker_RankExamStart']=array(
+    '^/user/broker/rankstart/*'
+);
+
+$config['mappings']['User_Broker_RankExam']=array(
+    '^/user/broker/rankexam/*'
+);
+
+$config['mappings']['User_Broker_RankExamEnd']=array(
+    '^/user/broker/rankend/*'
+);
+
+//考试系统
+$config['mappings']['User_Broker_ExamStart']=array(
+    '^/user/broker/examstart/(.*)'
+);
+
+$config['mappings']['User_Broker_Exam']=array(
+    '^/user/broker/exam/(.*)'
+);
+
+$config['mappings']['User_Broker_ExamEnd']=array(
+    '^/user/broker/examend/(.*)'
+);
+//小区园丁--我参与记录
+$config['mappings']['User_Broker_CommunityGardeners']=array(
+    '^/user/broker/gardener'
+);
+//申请小区园丁
+$config['mappings']['User_Broker_CommunityApplyGardeners']=array(
+    '^/user/broker/applygardener'
+);
+//小区园丁--我参与记录 新页面
+$config['mappings']['User_Broker_CommunityNewGardeners']=array(
+    '^/user/broker/newgardener'
+);
+//奶牛1.5免费经纪亄1?7 wade
+$config['mappings']['User_Broker_IdCard']=array(
+    '^/user/idcard'
+);
+//经纪人后台开通付费套餄1?7
+$config['mappings']['User_Broker_OpenPay']=array(
+    '^/user/broker/openpay'
+);
+//经纪人后台开通免费套餄1?7
+$config['mappings']['User_Broker_OpenFree']=array(
+    '^/user/broker/openfree'
+);
+
+//小区添加
+$config['mappings']['User_Broker_AddCommumity']=array(
+    '^/user/brokeraddcommumity/',
+    '^/user/brokeraddcommumity/([0-9]+)$'
+);
+//百度广告
+$config['mappings']['Promotion_BaiduAd']=array(
+    '^/promotion/baidu/(W0QQ.*)?$'
+);
+//网络助手可?1?7?日期配罄1?7
+$config['mappings']['User_Broker_SelectDateReport']=array(
+    '^/user/broker/switchreport/'
+);
+//活动中心
+$config['mappings']['User_Broker_ActivityCentre']=array(
+    '^/user/broker/activitycentre/([0-9]+)$',
+    '^/user/broker/activitycentre/'
+);
+//大学堂列衄1?7
+$config['mappings']['User_Broker_ExamCentre']=array(
+    '^/user/broker/examcentre/([0-9]+)$',
+    '^/user/broker/examcentre/'
+);
+// 租房列表页
+$config['mappings']['Listing_Rent_PropSearch']=array(
+    '^/(rent|rents|rental)/(.*)W0QQ.*',
+    '^/(rent|rents|rental)/(.*)'
+);
+
+//租房房源单页
+$config['mappings']['View_Property_Rent']=array(
+    '^/prop/rent/([0-9]+)$',
+    '^/prop/(rent2)/([0-9]+)$'
+);
+//租房房源单页扩展信息
+// $config['mappings']['Ajax_AjaxRentExt']=array(
+//     '^/ajax/rentext/$'
+// );
+//小区园丁列表顄1?7
+$config['mappings']['Community_CommunityGardenersList']=array(
+    '^/community/gardener/([0-9]+)(W0QQ.*)?$'
+);
+//支付中心页面
+$config['mappings']['Acenter_Account']=array(
+    '^/acenter/account/$'
+);
+//支付中心页面
+$config['mappings']['Acenter_Error']=array(
+    '^/acenter/error/$'
+);
+
+//支付中心快钱页面
+$config['mappings']['Acenter_99bill_Pay']=array(
+    '^/acenter/99bill/(result|success|send)/'
+);
+//支付中心财付通页靄1?7
+$config['mappings']['Acenter_Tenpay_Pay']=array(
+    '^/acenter/tenpay/(result|success|send)/'
+);
+//支付中心支付宝页靄1?7
+$config['mappings']['Acenter_Alipay_Pay']=array(
+    '^/acenter/alipay/(pgjump|bgcall|send)/'
+);
+//超级收款接收支付宝结果的接口
+$config['mappings']['Acenter_Alipay_CjskPay']=array(
+    '^/acenter/alipay/cjsk/',
+    '^/acenter/alipay/cjsk'
+);
+//支付中心app接口
+$config['mappings']['Acenter_AcInterfaces']=array(
+    '^/acenter/interfaces/'
+);
+
+
+//支付中心测试
+$config['mappings']['Acenter_Test']=array(
+    '^/acenter/test/'
+);
+
+//小区补全拼音
+$config['mappings']['Community_RunPinyin']=array(
+    '^/community/run/pinyin/'
+);
+
+//跑小区周边配奄1?7
+$config['mappings']['Community_RunRound']=array(
+    '^/community/run/round/'
+);
+
+//保存小区周边配套
+$config['mappings']['Community_SaveRound']=array(
+    '^/community/save/round/'
+);
+
+//获取小区基本信息
+$config['mappings']['Community_RoundList']=array(
+    '^/community/round/list/'
+);
+
+//配置文件测试
+$config['mappings']['Tools_ConfTest']=array(
+    '^/conftest'
+);
+$config['mappings']['Tools_APCTools']=array(
+    '^/APCTool'
+);
+
+//问答我的安居宄1?7
+$config['mappings']['My_Member_V2_MyQuestion']=array(
+    '^/member/ask/my/$',
+    '^/member/ask/([0-9]+)/(.*)$'
+);
+//好友還1?7评1?7
+$config['mappings']['User_Broker_FriendInvite']=array(
+    '^/user/broker/friendinvite/'
+);
+//還1?7请好友展示页
+$config['mappings']['My_FriendInviteView']=array(
+    '^/friendinvite/'
+);
+
+//字母索引列表顄1?7
+$config['mappings']['SEO_LetterList']=array(
+    '^/letters/([A-Z]|[a-z])/(.*)$'
+);
+
+//门店抓点
+$config['mappings']['Map2_AgencyPoint']=array(
+    '^/map/run/agencypoint$'
+);
+
+//应用app购买
+$config['mappings']['User_Broker_BuyApp']=array(
+    '^/user/broker/buyapp/'
+);
+//我订购的服务
+$config['mappings']['User_Broker_BuyMyApp']=array(
+    '^/user/broker/myapp/'
+);
+//我订购的服务
+$config['mappings']['User_Broker_BuyAppTicket']=array(
+    '^/user/broker/appticket/'
+);
+
+/****************haozu app start*************/
+$config['mappings']['User_Broker_App_HaoZuApp']=array(
+    '^/user/broker/haozu'
+);
+/****************haozu app end*************/
+
+//店铺404
+$config['mappings']['Shop_Shop404']=array(
+    '^/shop/notfound/?$'
+);
+//店铺弄1?7兄1?7
+$config['mappings']['User_Broker_ShopSwitcher']=array(
+    '^/user/broker/shopswitcher'
+);
+
+/*-----------------------------------------------------卖房频道专用_开始-----------------------------------------------------*/
+//业主发布房源单页iframe页面，用于发布预览
+$config['mappings']['View_Property_ViewYzIframe']=array(
+    '^/prop/viewyzi/([0-9]+)$'
+);
+//业主频道
+$config['mappings']['Owner_Gujia']=array(
+    '^/owner/gujia/*'
+);
+$config['mappings']['Owner_Basic']=array(
+    '^/owner/*'
+);
+//业主频道获取精准估价的房孄1?7
+$config['mappings']['Member_Estimation']=array(
+    '^/member/estimation/'
+);
+//业主频道获取精准估价的房子列衄1?7
+$config['mappings']['Member_EstimationList']=array(
+    '^/member/estlist/'
+);
+//业主频道精准估价的房子发帄1?7
+$config['mappings']['Member_EstimationPublish']=array(
+    '^/member/estpublish/'
+);
+//业主频道精准估价的房子委扄1?7
+$config['mappings']['Member_EstimationEntrust']=array(
+    '^/member/estentrust/'
+);
+//业主房源套餐选择页
+$config['mappings']['Owner_MealChoose']=array(
+    '^/member/own/mchoose'
+);
+//业主自己发布房源
+$config['mappings']['Member_OwnProperty']=array(
+    '^/member/own/property/(.*)W0QQ',
+    '^/member/own/property/(.*)'
+);
+//业主委托
+$config['mappings']['Listing_Broker_BrokerListNew']=array(
+    '^/broker/listnew'
+);
+//用户房源装换为用户业主委托
+$config['mappings']['Member_Intermediate']=array(
+    '^/member/property/intermediate/'
+);
+//业主发布房源单页
+$config['mappings']['View_Property_ViewYzProperty']=array(
+    '^/prop/viewyz/([0-9]+)$'
+);
+//业主发布房源管理引导顄1?7
+$config['mappings']['Member_LeadProperty']=array(
+    '^/member/leadproperty'
+);
+//业主发布房源成功顄1?7
+$config['mappings']['Member_ReleasePropertyOk']=array(
+    '^/member/releasepropertyok'
+);
+//业主发布房源订单确认顄1?7
+$config['mappings']['Member_ReleasePayconfirm']=array(
+    '^/member/payconfirm'
+);
+//业主发布房源失败页面
+$config['mappings']['Member_ReleaseProerror']=array(
+    '^/member/releaseproerror'
+);
+// 手拉手帮助
+$config['mappings']['Member_HandInHandWindow']=array(
+    '^/member/hihwindow$'
+);
+//快速估房价
+$config['mappings']['Kit_Estimation']=array(
+    '^/gujia/$',
+    '^/gujia/*',
+    '^/estimation/'
+);
+
+$config['mappings']['Owner_PropBaseInfo']=array(
+    '^/ownpbase$'
+);
+/*-----------------------------------------------------卖房频道专用_结束-----------------------------------------------------*/
+
+$config['mappings']['User_Broker_Template_Show']=array(
+    '^/user/broker/template/show'
+);
+$config['mappings']['User_Broker_Template_Add']=array(
+    '^/user/broker/template/add/W0QQ',
+    '^/user/broker/template/(common)?/add/W0QQ',
+    '^/user/broker/template/(common)?/add$',
+    '^/user/broker/template/add$'
+);
+$config['mappings']['User_Broker_Template_Index']=array(
+    '^/user/broker/template/(common)/W0QQ',
+    '^/user/broker/template/W0QQ',
+    '^/user/broker/template/(common)?$'
+);
+//付费经纪人到期提醄1?7
+$config['mappings']['User_Broker_MaturityRemind']=array(
+    '^/user/broker/maturityremind/([0-9]+)$',
+    '^/user/broker/maturityremind/'
+);
+
+//线上沟?1?7?1?7
+$config['mappings']['User_Broker_IMOnline']=array(
+    '^/user/broker/imonline/'
+);
+
+// APP体验资格申请
+$config['mappings']['User_Broker_ApplyApp']=array(
+    '^/user/broker/applyapp(/.+)?'
+);
+// 518房屏蔄1?7
+$config['mappings']['User_Broker_Property_Validate']=array(
+    '^/user/broker/property/v'
+);
+
+// MobileMapLog
+$config['mappings']['Just4Fun_MobileLoggingMap']=array(
+    '^/mmlog$'
+);
+
+// feeds
+$config['mappings']['User_Broker_Feeds']=array(
+    '^/user/broker/(timelines|addfeed|readmess)'
+);
+
+// 购买标签app
+$config['mappings']['User_Broker_Extratag']=array(
+    '^/user/broker/extratag*'
+);
+
+//访问房源单页房源照片
+$config['mappings']['View_Property_PropertyPhoto']=array(
+    '^/prop/photos/([0-9]+)_([0-9]+)$'
+);
+// 房源视频
+$config['mappings']['User_Broker_AppVideo']=array(
+    '^/user/broker/appvideo/'
+);
+
+//问答内容管理新增问题
+$config['mappings']['QA_Manage_QuestionManageNew']=array(
+    '^/qa/newman/$',
+    '^/content/newmanage/$'
+);
+//问答内容管理
+$config['mappings']['QA_Manage_QuestionManageV2']=array(
+    '^/qa/man/$',
+    '^/qa/man/(.*)',
+    '^/content/manage/$',
+    '^/content/manage/(.*)'
+);
+//问答专题页配置
+$config['mappings']['QA_Manage_QuestionManageTopicIndex']=array(
+    '^/qa/topicindex/$',
+    '^/qa/topicindex/(.*)',
+    '^/content/topicindex/$',
+    '^/content/topicindex(.*)'
+);
+//问答问题首页配置
+$config['mappings']['QA_Manage_QuestionRecoQaIndex']=array(
+    '^/content/recoqaindex/$',
+    '^/content/recoqaindex(.*)'
+);
+
+//问答问题推荐后台列表
+$config['mappings']['QA_Manage_QuestionRecoList']=array(
+    '^/content/recolist/$',
+    '^/content/recolist(.*)'
+);
+
+$config['mappings']['QA_Manage_QuestionRecoItem']=array(
+    '^/content/recolist/$',
+    '^/content/recoitem(.*)'
+);
+
+
+//问答防火墙设置
+$config['mappings']['QA_Manage_QuestionFirewallSetting']=array(
+    '^/qa/firewallsetting/$',
+    '^/qa/firewallsetting/(.*)',
+    '^/content/firewallsetting/$',
+    '^/content/firewallsetting(.*)'
+);
+
+//问答房产百科添加
+$config['mappings']['QA_Manage_QuestionAddBaikeItem']=array(
+    '^/content/addbaikeitem/$',
+    '^/content/addbaikeitem(.*)'
+);
+
+//问答房产百科列表
+$config['mappings']['QA_Manage_QuestionBaikeItemList']=array(
+    '^/content/baikeitemlist/$',
+    '^/content/baikeitemlist(.*)'
+);
+
+//问答热门词条设置
+$config['mappings']['QA_Manage_QuestionHotItemSetting']=array(
+    '^/content/hotitmsetting/$',
+    '^/content/hotitmsetting(.*)'
+);
+
+//问答热门词条设置
+$config['mappings']['QA_Manage_ScoreConfig']=array(
+    '^/content/scoreconfig/$',
+    '^/content/scoreconfig(.*)'
+);
+//经纪人店铺问筄1?7
+$config['mappings']['Shop_v1_Question']=array(
+    '^/shop/question/([0-9]+)'
+);
+//问答专家
+$config['mappings']['User_Broker_Ask']=array(
+    '^/user/broker/ask/'
+);
+//积分兑换标签
+$config['mappings']['User_Broker_GradeExchanges']=array(
+    '^/user/broker/gradeexchanges/'
+);
+//问答内容管理专家成员管理
+$config['mappings']['QA_Manage_MemberManage']=array(
+    '^/content/member/manage/(.*)W0QQ.*',
+    '^/content/member/manage/(.*)',
+    '^/qa/meman/(.*)W0QQ.*',
+    '^/qa/meman/(.*)'
+);
+//问答内容管理备选专家管理
+$config['mappings']['QA_Manage_MemberBackup']=array(
+    '^/content/member/backup/(.*)W0QQ.*',
+    '^/content/member/backup/(.*)',
+    '^/qa/memback/(.*)W0QQ.*',
+    '^/qa/memback/(.*)'
+);
+//问答内容管理操作专家记录
+$config['mappings']['QA_Manage_MemberRecord']=array(
+    '^/content/member/record/(.*)W0QQ.*',
+    '^/content/member/record/(.*)',
+    '^/qa/memrec/(.*)W0QQ.*',
+    '^/qa/memrec/(.*)'
+);
+
+//问答内容管理 举报信息审核
+$config['mappings']['QA_Manage_InformManage']=array(
+    '^/content/inform(.*)W0QQ.*',
+    '^/content/inform(.*)',
+    '^/qa/inform(.*)W0QQ.*',
+    '^/qa/inform(.*)'
+);
+//问答内容管理 推荐信息审核
+$config['mappings']['QA_Manage_RecommendManage']=array(
+    '^/content/recommend(.*)W0QQ.*',
+    '^/content/recommend(.*)',
+    '^/qa/recommend(.*)W0QQ.*',
+    '^/qa/recommend(.*)'
+);
+//问答内容管理 推荐回答与审核处理
+$config['mappings']['QA_Manage_RecmdAnswerManage']=array(
+    '^/content/recmdanswer(.*)W0QQ.*',
+    '^/content/recmdanswer(.*)',
+    '^/qa/recmdanswer(.*)W0QQ.*',
+    '^/qa/recmdanswer(.*)'
+);
+//问答内容管理 日志记录
+$config['mappings']['QA_Manage_LogManage']=array(
+    '^/content/log(.*)W0QQ.*',
+    '^/content/log(.*)',
+    '^/qa/log(.*)W0QQ.*',
+    '^/qa/log(.*)'
+);
+
+//更改获取房源方式zhishanwu
+$config['mappings']['communityrooms_CommunityNoRooms']=array(
+    '^/communityRooms/CommunityNoRooms/'
+);
+
+$config['mappings']['QA_Expert']=array(
+    '^/qa/expert'
+);
+
+//新的小区列表页
+$config['mappings']['Listing_Communitynew_Search'] = array(
+    '^/community/?(.*)W0QQ.*',
+    '^/community/?(.*)',
+    '^/xiaoqu/(.*)W0QQ.*',
+    '^/xiaoqu/(.*)'
+);
+
+//问答单页
+$config['mappings']['QA_QuestionBaikeView'] = array(
+    '^/baike/([0-9]+)$'
+);
+
+//经纪人公司V2
+$config['mappings']['Company_Company'] = array(
+    '^/company/'
+);
+
+//问答内容管理顾问成员管理
+$config['mappings']['QA_Manage_ConsultManage'] = array(
+    '^/content/consult/manage/(.*)W0QQ.*',
+    '^/content/consult/manage/(.*)',
+    '^/qa/consman/(.*)W0QQ.*',
+    '^/qa/consman/(.*)'
+);
+
+//问答盟主页
+$config['mappings']['QA_Manage_LeagueView'] = array (
+    '^/league/view/([0-9]{1,11})/$',
+    '^/league/view/([0-9]{1,11})(.*)',
+    '^/league/view/',
+    '^/league/view'
+);
+
+//问答盟主页
+$config['mappings']['QA_Manage_LeagueFCView'] = array (
+    '^/fcleague/view/([0-9]{1,11})/$',
+    '^/fcleague/view/([0-9]{1,11})(.*)',
+    '^/fcleague/view/',
+    '^/fcleague/view'
+);
+
+//问答内容管理顾问分类管理
+$config['mappings']['QA_Manage_ConsultClass'] = array(
+    '^/content/consult/class/(.*)W0QQ.*',
+    '^/content/consult/class/(.*)',
+    '^/qa/consclass/(.*)W0QQ.*',
+    '^/qa/consclass/(.*)'
+);
+
+
+//问答内容管理顾问分类添加/编辑操作
+$config['mappings']['QA_Manage_ConsultEditClass'] = array(
+    '^/content/consult/editclass/(.*)W0QQ.*',
+    '^/content/consult/editclass/(.*)',
+    '^/qa/cons/edit/(.*)W0QQ.*',
+    '^/qa/cons/edit/(.*)'
+);
+
+//问答内容管理操作顾问记录
+$config['mappings']['QA_Manage_ConsultRecord'] = array(
+    '^/content/consult/record/(.*)W0QQ.*',
+    '^/content/consult/record/(.*)',
+    '^/qa/consrec/(.*)W0QQ.*',
+    '^/qa/consrec/(.*)'
+);
+
+
+//普通用户我的小组
+$config['mappings']['My_Member_V2_Mygroup']=array(
+    '^/member/group/?$'
+);
+
+//经纪人我的小组
+$config['mappings']['User_Broker_MyGroup']=array(
+    '^/user/broker/group/?$'
+);
+
+//我的小组退出小组
+$config['mappings']['My_Member_V2_Mytuichu']=array(
+    '^/member/tuichu'
+);
+//问答专家个人主页
+$config['mappings']['QA_Manage_ExpertView'] = array (
+    '^/expert/view/'
+
+);
+//问答房产顾问个人主页
+$config['mappings']['QA_Manage_ConsultView'] = array (
+    '^/consult/view/([0-9]+)/(.*)W0QQ.*'
+);
+
+$config['mappings']['Ajax_ConsultAsk']=array(
+    '^/ajax/consultask/(.*)'
+);
+
+//管理顾问个人信息页面
+$config['mappings']['QA_Manage_EditConsultInfo'] = array(
+    '^/consult/edit/([0-9]+)/(.*)W0QQ.*',
+    '^/consult/edit/([0-9]+)/$'
+);
+//管理顾问个人信息页面
+$config['mappings']['QA_Manage_EditConsultImg'] = array(
+    '^/consult/editimg/([0-9]+)/(.*)W0QQ.*',
+    '^/consult/editimg/([0-9]+)/$'
+);
+
+//顾问个人详细经验值查看页面
+$config['mappings']['QA_Manage_ConsultGrades'] = array(
+    '^/consult/qagrades/([0-9]+)/(.*)W0QQ.*',
+    '^/consult/qagrades/([0-9]+)/$'
+);
+//好盘直通车推广页面
+$config['mappings']['User_Broker_ThroughTrainWelcome']=array(
+    '^/user/broker/throughtrain/welcome'
+);
+//好盘直通车-小区房源推广计划管理页
+$config['mappings']['User_Broker_ThroughTrain']=array(
+    '^/user/broker/throughtrain'
+);
+
+//账户充值页面
+$config['mappings']['User_Broker_HpSupplement']=array(
+    '^/user/broker/hpsupplement'
+);
+//推广效果页面-每天
+$config['mappings']['User_Broker_SpreadEffects']=array(
+    '^/user/broker/spreadeffects'
+);
+//推广效果页面-小时
+$config['mappings']['User_Broker_SpreadHEffects']=array(
+    '^/user/broker/spreadheffects'
+);
+//推广效果页面
+$config['mappings']['User_Broker_HpSpreadSetting']=array(
+    '^/user/broker/hpspreadsetting'
+);
+//推广效果页面
+$config['mappings']['User_Broker_SpreadDetail']=array(
+    '^/user/broker/spreaddetail'
+);
+
+
+//管理顾问个人信息页面
+$config['mappings']['QA_Manage_EditConsultInfo'] = array(
+    '^/consult/edit/([0-9]+)/(.*)W0QQ.*',
+    '^/consult/edit/([0-9]+)/$'
+);
+
+//顾问个人详细经验值查看页面
+$config['mappings']['QA_Manage_ConsultGrades'] = array(
+    '^/consult/qagrades/([0-9]+)/(.*)W0QQ.*',
+    '^/consult/qagrades/([0-9]+)/$'
+);
+
+
+//充值日志
+$config['mappings']['User_Broker_SupplementLog']=array(
+    '^/user/broker/supplementlog' ,
+);
+
+//好盘数据分析
+$config['mappings']['User_Broker_HpRank']=array(
+    '^/user/broker/hprank/(W0QQ)*'
+);
+
+// //经纪人建议反馈精选列表页
+$config['mappings']['User_Broker_SuggestionList'] = array(
+    '^/user/broker/suggestionlist/(W0QQ)*'
+);
+
+//UFS相关
+$config['mappings']['UFS_Feedback'] = array(
+    '^/ufs/feedback/'
+);
+
+$config['mappings']['My_Member_V2_MyFeedback'] = array(
+    '^/member/feedback/([0-9]+)/(.*)$'
+);
+
+$config['mappings']['Shop_v1_Userfeedback']=array(
+    '^/shop/ufs/([0-9]+)'
+);
+
+//问答管理中心问题维护
+$config['mappings']['QA_Manage_QaGuard'] = array(
+    '^/qa/guard/(.*)W0QQ.*',
+    '^/qa/guard/$'
+);
+//问答登录验证
+$config['mappings']['QA_ViewLogin'] = array(
+    '^(/qa/viewlogin)$'
+);
+
+//经纪人回访调查
+$config['mappings']['User_Broker_Research'] = array(
+    '^/user/broker/research/(W0QQ)*'
+);
+//大学堂帮助首页
+$config['mappings']['User_Broker_StudyHome'] = array(
+    '^/user/broker/study/(.*)'
+);
+//大学堂帮助列表页
+$config['mappings']['User_Broker_StudyList'] = array(
+    '^/user/broker/studylist/(.*)'
+);
+//大学堂帮助详情页
+$config['mappings']['User_Broker_StudyArticle'] = array(
+    '^/user/broker/studyarticle/(.*)'
+);
+
+//问答顾问单页
+$config['mappings']['QA_Consultant'] = array(
+    '^/qa/consultant/(loan|law|zxfs)$',
+);
+
+$config['mappings']['QA_Manage_Apply'] = array(
+    '^/consult/apply$'
+);
+//经纪人求购信息
+$config['mappings']['User_Broker_ProNeed'] = array(
+    '^/user/broker/proneed/(W0QQ)*'
+);
+
+
+//卖房新流程（先选经纪人）经纪人列表页
+$config['mappings']['Owner_BrokerSelect'] = array(
+    '^/(jingjiren)/(.*)W0QQ.*',
+    '^/(jingjiren)/(.*)',
+    '^/jingjiren',
+);
+
+//卖房新流程（先选经纪人）确认委托
+$config['mappings']['owner_Verify'] = array(
+    '^/(ownverify)/(.*)W0QQ.*',
+    '^/(ownverify)/(.*)',
+    '^/ownverify',
+);
+
+$config['mappings']['AnjukeV1_FriendLink']=array(
+    '^/friendlink\.php'
+);
+
+//新修改手机号码
+$config['mappings']['User_Broker_EditMobile'] = array(
+    '^/user/broker/editmobile/W0QQ.*',
+    '^/user/broker/editmobile/?$',
+);
+
+
+//显示小区均价
+$config['mappings']['Tools_CommunityPriceMonitor']=array(
+    '^/tools/communityprice/$'
+);
+
+//提供测试压力测试用的 冻结余额的url
+$config['mappings']['Test_TestHpBalance'] = array(
+    '^/test/testhpbalance/$*'
+);
+//好盘管理页查询恶意退费金额
+$config['mappings']['Ajax_GetRefundMoney'] = array(
+    '^/ajax/getrefundmoney'
+);
+
+//房源草稿箱
+$config['mappings']['User_Broker_ProDraft']=array(
+    '^/user/prodraft'
+);
+
+
+//手机app区分跳转页面
+$config['mappings']['Mobile_GetApp'] = array(
+    '^/mobile/getapp/?'
+);
+
+
+
+$config['mappings']['Newmap_MapSearch']=array(
+        '^/newmap/search2?.+'
+);
+
+$config['mappings']['Newmap_MapLucene']=array(
+    '^/newmap/search?.+'
+);
+
+//房源发布3.0
+$config['mappings']['User_Broker_Property2_SaleStep1']=array(
+    '^/user/broker/propertynew/sale/step1'
+);
+$config['mappings']['User_Broker_Property2_SaleStep2']=array(
+    '^/user/broker/propertynew/sale/step2'
+);
+
+//出租发布3.0
+$config['mappings']['User_Broker_Property2_RentStep1']=array(
+    '^/user/broker/propertynew/rent/step1'
+);
+$config['mappings']['User_Broker_Property2_RentStep2']=array(
+    '^/user/broker/propertynew/rent/step2'
+);
+
+
+//房源发布4.0 ppc
+$config['mappings']['User_Broker_Propertyppc_SaleStep1']=array(
+    '^/user/broker/ppc/sale/step1'
+);
+$config['mappings']['User_Broker_Propertyppc_SaleStep2']=array(
+    '^/user/broker/ppc/sale/step2'
+);
+$config['mappings']['User_Broker_Propertyppc_SaleStep3']=array(
+    '^/user/broker/ppc/sale/step3'
+);
+$config['mappings']['User_Broker_Propertyppc_SaleStep4']=array(
+    '^/user/broker/ppc/sale/step4'
+);
+
+//出租发布4.0 ppc
+$config['mappings']['User_Broker_Propertyppc_RentStep1']=array(
+    '^/user/broker/ppc/rent/step1'
+);
+$config['mappings']['User_Broker_Propertyppc_RentStep2']=array(
+    '^/user/broker/ppc/rent/step2'
+);
+
+//房源发布第三步
+$config['mappings']['User_Broker_Property2_Step3']=array(
+    '^/user/broker/propertynew/step3'
+);
+
+//房源发布第三步4.0 ppc
+$config['mappings']['User_Broker_Propertyppc_Step3']=array(
+    '^/user/broker/ppc/step3'
+);
+
+$config['mappings']['Ufs_Tmpcrm'] = array(
+    '^/ufs/tmpcrm/'
+);
+
+$config['mappings']['User_Broker_Questionnaire']=array(
+    '^/user/broker/questionnaire/([0-9]+)/?$',
+    '^/user/broker/questionnaire/([0-9]+)(A|B|C|D)/?$'
+);
+$config['mappings']['User_Broker_Qsuccess']=array(
+    '^/user/broker/qsuccess/([0-9]+)/(A|B|C)/?$'
+);
+
+//经纪人私信
+$config['mappings']['User_Broker_Brokerletter']=array(
+    '^/user/broker/letter/?$',
+    '^/user/broker/letter/W0QQpZ(.*)/?$',
+);
+//经纪人系统消息（私信）
+$config['mappings']['User_Broker_Brokersletter']=array(
+    '^/user/broker/sletter/?$',
+    '^/user/broker/sletter/W0QQpZ(.*)/?$'
+);
+//经纪人系统消息（私信）
+$config['mappings']['User_Broker_Brokersletterinfo']=array(
+    '^/user/broker/sletter/([0-9]+)/?$',
+    '^/user/broker/sletter/([0-9]+)/W0QQpZ(.*)/?$'
+);
+//经纪人私信详细信息
+$config['mappings']['User_Broker_Brokerletterinfo']=array(
+    '^/user/broker/letter/([0-9]+)/?$',
+    '^/user/broker/letter/([0-9]+)/W0QQpZ(.*)/?$',
+);
+//经纪人私信发送私信
+$config['mappings']['User_Broker_Brokersendletter']=array(
+    '^/user/broker/sendletter/?$',
+    '^/user/broker/sendletter/([0-9]+)/?$',
+);
+
+//个人用户私信
+$config['mappings']['My_Member_V2_MyLetter']=array(
+    '^/member/letter/([0-9]+)/?$',
+    '^/member/letter/([0-9]+)/W0QQpZ(.*)/?$'
+);
+//个人用户私信详细
+$config['mappings']['My_Member_V2_MyLetterinfo']=array(
+    '^/member/letter/([0-9]+)/([0-9]+)/?$',
+    '^/member/letter/([0-9]+)/([0-9]+)/W0QQpZ(.*)/?$'
+);
+//个人用户系统私信
+$config['mappings']['My_Member_V2_MysLetter']=array(
+    '^/member/sletter/([0-9]+)/?$',
+    '^/member/sletter/([0-9]+)/W0QQpZ(.*)/?$'
+);
+//个人用户系统私信详细
+$config['mappings']['My_Member_V2_MysLetterInfo']=array(
+    '^/member/sletter/([0-9]+)/([0-9_]+)/?$',
+    '^/member/sletter/([0-9]+)/([0-9]+)/W0QQpZ(.*)/?$'
+);
+//个人用户系统私信详细
+$config['mappings']['My_Member_V2_MySendLetterinfo']=array(
+    '^/member/sendletter/?$',
+    '^/member/sendletter/([0-9]+)/?$'
+);
+
+//ufs 抽奖
+$config['mappings']['UFS_Luckdraw'] =array(
+    '^/ufs/Luckdraw/'
+);
+
+
+//问答专家盟管理
+$config['mappings']['QA_Manage_CreateLeague'] = array(
+    '^/content/consult/league/(.*)W0QQ.*',
+    '^/content/consult/league/(.*)',
+);
+
+//问答房产专家盟管理
+$config['mappings']['QA_Manage_CreateFCLeague'] = array(
+    '^/content/consult/fcleague/(.*)W0QQ.*',
+    '^/content/consult/fcleague/(.*)',
+);
+
+//问答专家盟搜索
+$config['mappings']['QA_Manage_SearchLeague'] = array(
+    '^/content/consult/search/(.*)W0QQ.*',
+    '^/content/consult/search/(.*)',
+);
+
+//问答房产专家盟搜索
+$config['mappings']['QA_Manage_SearchFCLeague'] = array(
+    '^/content/consult/fcsearch/(.*)W0QQ.*',
+    '^/content/consult/fcsearch/(.*)',
+);
+
+//问答专家盟日志
+$config['mappings']['QA_Manage_LeagueLog'] = array(
+    '^/content/consult/LeagueLog/(.*)W0QQ.*',
+    '^/content/consult/LeagueLog/',
+);
+
+//问答房产专家盟日志
+$config['mappings']['QA_Manage_LeagueFCLog'] = array(
+    '^/content/consult/fcLeagueLog/(.*)W0QQ.*',
+    '^/content/consult/fcLeagueLog/',
+);
+
+//问答专家盟 排名
+$config['mappings']['QA_Manage_LeagueRank'] = array(
+    '^/content/leaguerank/(.*)W0QQ.*',
+    '^/content/leaguerank/(.*)',
+);
+//问答专家盟 申请
+$config['mappings']['QA_Manage_LeagueApply'] = array(
+    '^/content/leagueapply/(.*)W0QQ.*',
+    '^/content/leagueapply/(.*)',
+);
+
+$config['mappings']['QA_Manage_QaActivityList'] = array(
+    '^/qaactivitylist/(.*)W0QQ.*',
+    '^/qaactivitylist/(.*)',
+);
+
+$config['mappings']['QA_Manage_QaActivityManage'] = array(
+    '^/qaactivitymanage/(.*)W0QQ.*',
+    '^/qaactivitymanage/(.*)',
+);
+
+//问答专家盟 排名
+$config['mappings']['QA_Manage_LeagueFCRank'] = array(
+    '^/content/leaguefcrank/(.*)W0QQ.*',
+    '^/content/leaguefcrank/(.*)',
+);
+//问答专家盟 申请
+$config['mappings']['QA_Manage_LeagueFCApply'] = array(
+    '^/content/leaguefcapply/(.*)W0QQ.*',
+    '^/content/leaguefcapply/(.*)',
+);
+
+//活动专栏 添加
+$config['mappings']['QA_Manage_AddActivity'] = array(
+    '^/content/addactivity/(.*)W0QQ.*',
+    '^/content/addactivity/(.*)',
+);
+
+//活动专栏 列表
+$config['mappings']['QA_Manage_ListActivity'] = array(
+    '^/content/listactivity/(.*)W0QQ.*',
+    '^/content/listactivity/(.*)',
+);
+
+//编辑联盟信息
+$config['mappings']['QA_Manage_EditLeague'] = array(
+    '^/content/consult/EditLeague/(.*)W0QQ.*',
+    '^/content/consult/EditLeague/(.*)',
+);
+
+//编辑联盟信息
+$config['mappings']['QA_Manage_EditFCLeague'] = array(
+    '^/content/consult/EditFCLeague/(.*)W0QQ.*',
+    '^/content/consult/EditFCLeague/(.*)',
+);
+
+//盟成员列表页
+$config['mappings']['QA_Manage_ListLeague'] = array(
+    '^/content/consult/ListLeague/(.*)W0QQ.*',
+    '^/content/consult/ListLeague/(.*)',
+);
+
+//盟成员列表页
+$config['mappings']['QA_Manage_ListFCLeague'] = array(
+    '^/content/consult/ListFCLeague/(.*)W0QQ.*',
+    '^/content/consult/ListFCLeague/(.*)',
+);
+
+//我爱我家
+$config['mappings']['User_Broker_bj5i5j']=array("^/user/broker/5i5j");
+//选择图片服务器
+$config['mappings']['User_Broker_Property2_picServer']=array("^/user/broker/property2/picserver");
+//选择图片服务器4.0 ppc
+$config['mappings']['User_Broker_Propertyppc_picServer']=array("^/user/broker/ppc/picserver");
+//speedTest
+// $config['mappings']['Ajax_SpeedTest']=array("^/ajax/speed");
+
+//清泉
+$config['mappings']['Tools_ClearSpring'] = array(
+    '^/tools/spring'
+);
+
+//PPC账户管理首页
+$config['mappings']['User_Broker_Accountmanagement']=array(
+    '^/user/broker/accountmanagement/?$'
+);
+//PPC账户设置页面
+$config['mappings']['User_Broker_Accountsetting']=array(
+    '^/user/broker/accountsetting/?$'
+);
+//PPC账户设置成功提示页面
+$config['mappings']['User_Broker_Accountsettingsuccess']=array(
+    '^/user/broker/accountsettingsuccess/?$'
+);
+//房源管理库
+$config['mappings']['User_Broker_Ppc_BrokerPropManage2']=array(
+    '^/user/ppc/brokerpropmanage2'
+);
+//ppc 出租
+//房源管理库
+$config['mappings']['User_Broker_Ppc_BrokerPropManage']=array(
+    '^/user/ppc/brokerpropmanage'
+);
+//定价推广页面
+$config['mappings']['User_Broker_Ppc_StaticPriceList']=array(
+    '^/user/ppc/staticpricelist'
+);
+//定价页面
+$config['mappings']['User_Broker_Ppc_StaticPriceSetting']=array(
+    '^/user/broker/staticpricesetting'
+);
+
+//定价效果页面
+$config['mappings']['User_Broker_FixedPriceDetail']=array(
+    '^/user/broker/fixedpricedetail/([0-9]+)/?'
+);
+//定价 竞价 对比效果页面
+$config['mappings']['User_Broker_SpreadFixedCompare']=array(
+    '^/user/broker/spreadfixedcompare/?'
+);
+$config['mappings']['User_Broker_Ppc_Transformmoney']=array(
+    '^/user/broker/transformmoney'
+);
+
+// 新版 竞价推广效果 历史数据页 Ben.mi
+$config['mappings']['User_Broker_Ppc_ViePriceDayEffects']=array(
+    '^/user/broker/ppc/viepricedayeffects'
+);
+
+// 新版 竞价推广效果 今日数据页 Ben.mi
+$config['mappings']['User_Broker_Ppc_ViePriceHourEffects']=array(
+    '^/user/broker/ppc/viepricehoureffects'
+);
+
+// 房源效果页面 bossni
+$config['mappings']['User_Broker_Sale_ProViewToday']=array(
+    '^/user/broker/sale/proview'
+);
+
+//出售竞价
+$config['mappings']['User_Broker_Ppc_SaleThroughTrain']=array(
+    '^/user/broker/ppc/salethroughtrain/?'
+);
+//出租竞价
+$config['mappings']['User_Broker_Ppc_RentThroughTrain']=array(
+    '^/user/broker/ppc/rentthroughtrain/?'
+);
+//推广效果页面
+$config['mappings']['User_Broker_Ppc_PpcSpreadSetting']=array(
+    '^/user/broker/ppc/spreadsetting'
+);
+
+//ppc获取前三名平均价
+$config['mappings']['User_Broker_Ppc_PpcWelcome'] = array(
+    '^/user/broker/ppc/ppcwelcome$'
+);
+
+$config['mappings']['User_Broker_BrokerHome']=array(
+    '^/user/broker/brokerhome'
+);
+
+$config['mappings']['Tools_UploadGardener'] = array(
+    '^/tools/uploadGardener(.*?)$'
+);
+
+//rank3.0 查询地址
+$config['mappings']['Tools_Rank']=array(
+    '^/tools/rank/([0-9]+)$'
+);
+
+//市场分析
+$config['mappings']['User_Broker_Ppc_MarketAnalysis'] = array(
+    '^/user/broker/ppc/analysis/?$'
+);
+//北京麦田公司
+$config['mappings']['User_Broker_bjmaitian'] = array("^/user/broker/maitian");
+
+$config['mappings']['User_Broker_CollectData'] = array("^/user/broker/collectData");
+
+
+//中介门店列表
+$config['mappings']['Home_7dscan']=array(
+    '^/7dscan\.html'
+);
+
+
+//记入log
+$config['mappings']['Tools_Log']=array(
+    '^/tools/log/$'
+);
+
+/*非管理员不能操作start*/
+//营销助手日期开关设置页面
+$config['mappings']['User_Broker_Ppc_AssistantDateSetting']=array(
+    '^/user/broker/ppc/assistantdate/?$'
+);
+
+//经纪人客户主任问卷调查
+$config['mappings']['User_Broker_CustomLeaderTest']=array(
+    "^/user/broker/customleadertest"
+);
+//经纪人客户主任问卷调查
+$config['mappings']['User_Broker_CustomLeaderTest']=array(
+    "^/user/broker/customleadertest"
+);
+/***********pmt12212 ppc_upgrade************/
+$config['mappings']['User_Broker_PpcNew_StepOne']=array(
+    '^/user/ppcnew/stepone'
+);
+$config['mappings']['User_Broker_PpcNew_StepTwo']=array(
+    '^/user/ppcnew/steptwo'
+);
+$config['mappings']['User_Broker_PpcNew_StepThree']=array(
+    '^/user/ppcnew/stepthree'
+);
+$config['mappings']['User_Broker_PpcNew_StepOver']=array(
+    '^/user/ppcnew/stepover'
+);
+$config['mappings']['User_Broker_PpcNew_BrokerPropManage']=array(
+    '^/user/ppcnew/brokerpropmanage'
+);
+//新定价推广页面
+$config['mappings']['User_Broker_PpcNew_StaticPriceList']=array(
+    '^/user/ppcnew/staticpricelist'
+);
+//新定价推广页面，出租
+$config['mappings']['User_Broker_PpcRentNew_StaticPriceList']=array(
+    '^/user/ppcnew/rent/staticpricelist'
+);
+
+//支付中心页面手机支付
+$config['mappings']['Acenter_AccountMobile']=array(
+    '^/acenter/accountmobile/$'
+);
+//支付中心支付宝
+$config['mappings']['Acenter_Alipay_WapPay']=array(
+    '^/acenter/wapalipay/(pgjump|bgcall|send)/'
+);
+
+
+
+//金铺首页
+$config['mappings']['User_Broker_Jinpu_HomePage']=array(
+    '^/user/broker/jinpu/homepage'
+);
+
+//金铺首页
+$config['mappings']['User_Broker_Zufang_ZfHomePage']=array(
+    '^/user/broker/zufang/zfhomepage'
+);
+
+//新二手房首页
+$config['mappings']['User_Broker_Sale_HomePage']=array(
+    '^/user/broker/sale/homepage'
+);
+//新二手房推广信息页
+$config['mappings']['User_Broker_Sale_ProView']=array(
+    '^/user/broker/sale/newproview'
+);
+
+//新二手房引导页
+$config['mappings']['User_Broker_Sale_HomePageGuide']=array(
+    '^/user/broker/sale/guide'
+);
+//租房首页
+$config['mappings']['User_Broker_Zufang_ZfHomePage']=array(
+    '^/user/broker/zufang/zfhomepage'
+);//提供给爱房用户中心各个nav的链接信息
+
+$config['mappings']['User_Broker_PpcRentNew_StepTwo']=array(
+    '^/user/ppcnew/rent/steptwo'
+);
+$config['mappings']['User_Broker_PpcRentNew_StepThree']=array(
+    '^/user/ppcnew/rent/stepthree'
+);
+$config['mappings']['User_Broker_PpcRentNew_StepOver']=array(
+    '^/user/ppcnew/rent/stepover'
+);
+$config['mappings']['User_Broker_PpcRentNew_BrokerPropManage']=array(
+    '^/user/ppcnew/rent/brokerpropmanage'
+);
+
+//安居客移动频道页面
+$config['mappings']['Mobile_Mobile']=array(
+    '^/mobile'
+);//急缺房源
+
+//经纪人店铺满房源打折活动
+$config['mappings']['User_Broker_Ppc_PropertyDiscount'] = array(
+    '^/user/broker/ppc/discount'
+);
+
+//认证任务
+$config['mappings']['User_Broker_AttestJob']=array(
+    '^/user/broker/attest/'
+);
+
+//经纪人店铺满房源打折活动
+$config['mappings']['User_Broker_Ppc_PropertyDiscount'] = array(
+    '^/user/broker/ppc/discount'
+);
+//显示小区均价
+$config['mappings']['Tools_Transcode']=array(
+    '^/tools/transcode/?$'
+);
+
+//经纪人播种计划活动页
+$config['mappings']['User_Broker_Ppc_SeedSend'] = array(
+    '^/user/broker/ppc/seed'
+);
+
+
+//邮箱退订入口
+$config['mappings']['My_Member_Subscribe_UnsubscribeByEmail'] = array(
+    '^/unsubscribe/email/(.*)'
+);
+
+//手机短信退订入口
+$config['mappings']['My_Member_Subscribe_UnsubscribeByPhone'] = array(
+    '^/unsubscribe/phone/(.*)'
+);
+
+
+//订阅后台列表
+$config['mappings']['My_Member_Subscribe_ManageList']=array(
+    '^/subscribe/manage/list/(.*)'
+);
+
+$config['mappings']['Bucket_PublishCookie']=array(
+        '^/bucket/cookie$'
+);
+
+/*crm*/
+$config['mappings']['Cms_CmsList'] = array(
+        '^/cms/([0-9]+).html'
+);
+
+
+//pad.anjuke.com跳转
+$config['mappings']['Tools_SemGoPad']=array(
+        '^/semgo/.*'
+);
+
+//用户中心修改
+$config['mappings']['My_Member_Modify_Userinfo']=array(
+    '^/member/modify/userinfo/'
+);
+//用户中心修改
+$config['mappings']['My_Member_Modify_Mobile']=array(
+    '^/member/modify/usermobile/'
+);
+
+
+$config['mappings']['Beautiful_Show']=array(
+    '^/2013beauty/show/([0-9]+)'
+);
+$config['mappings']['Beautiful_Join']=array(
+    '^/2013beauty/join/?$'
+);
+$config['mappings']['Beautiful_Poll']=array(
+    '^/2013beauty/poll/([0-9]+)',
+    '^/2013beauty/send_code/([0-9]+)',
+    '^/2013beauty/verify_code/([0-9]+)/([0-9]+)',
+    '^/2013beauty/phone_poll/([0-9]+)',
+    '^/2013beauty/weixin_poll/([0-9]+)',
+);
+
+//最美经纪人投票结果页
+$config['mappings']['Beautiful_Result']=array(
+    '^/2013beauty(.*)?$',
+    '^/2013beauty/result$',
+    '^/2013beauty/result/(.*)?$',
+);
+
+$config['mappings']['Beautiful_Index']=array(
+    #'^/2013beauty(.*)?$'
+);
+
+
+//意见反馈页面
+$config['mappings']['Help_HelpSuggestion']=array(
+        '^/suggestion'
+);
+
+//问答百科
+$config['mappings']['QA_Manage_AddBaike'] = array(
+    '^/content/addbaike/(.*)W0QQ.*',
+    '^/content/addbaike/(.*)',
+);
+
+$config['mappings']['QA_Manage_LockBaike'] = array(
+    '^/content/lockbaike/(.*)W0QQ.*',
+    '^/content/lockbaike/(.*)',
+);
+
+//手动更新百科列表
+$config['mappings']['QA_Manage_DiyBaike'] = array(
+    '^/content/diybaike/(.*)W0QQ.*',
+    '^/content/diybaike/(.*)',
+);
+
+$config['mappings']['QA_Manage_AuditBaike'] = array(
+    '^/content/auditbaike/(.*)W0QQ.*',
+    '^/content/auditbaike/(.*)',
+);
+
+$config['mappings']['QA_Manage_PassBaike'] = array(
+    '^/content/passbaike/(.*)W0QQ.*',
+    '^/content/passbaike/(.*)',
+);
+$config['mappings']['QA_Baike_EventPickup'] = array(
+    '^/baike/pickup(/?)'
+);
+
+$config['mappings']['QA_Baike_ItemEdit'] = array(
+    '^/baike/edit/([0-9]+)$'
+);
+
+$config['mappings']['QA_Baike_ItemPreview'] = array(
+    '^/baike/preview/([0-9]+)$'
+);
+
+//百科词条搜索列表页
+$config['mappings']['QA_Baike_SearchList'] = array(
+    '^/baike/search/p([0-9]+)+(.*)',
+    '^/baike/search/(.*)'
+);
+
+//百科词条范例页面
+$config['mappings']['QA_Baike_ItemExample'] = array(
+    '^/baike/edit/example/$'
+);
+
+$config['mappings']['QA_Baike_SubmitSuccess'] = array(
+    '^/baike/edit/success/$'
+);
+
+$config['mappings']['QA_Baike_BaikeClass'] = array(
+    '^/baike(/?)$',
+    '^/baike/$',
+    '^/baike/category$',
+    '^/baike/category/$',
+    '^/baike/category-([0-9]+)/$',
+    '^/baike/category-p([0-9]+)/$',
+    '^/baike/category-([0-9]+)-p([0-9]+)/$',
+);
+
+$config["mappings"]['Tools_UpCache'] = array(
+        '^/upcache/(.*)$'
+);
+//pad列表页调用房源单页ajax
+// $config['mappings']['Ajax_AjaxViewPropPad']=array(
+//         '^/pad/prop/view/([0-9]+)$'
+// );
+//小区大全
+$config["mappings"]['SEO_CommBooks'] =array(
+    '^/(.+)/cm/$',
+    '^/(.+)/cm/(.+)/'
+);
+//小区SEO页面
+$config["mappings"]['SEO_CommSingle'] =array(
+    '^/([a-z]+)/cm([0-9]+)(.*)'
+);
+
+//市场运营下载APP投票活动首页
+$config['mappings']['Activity_Downloadappvote_Index']=array(
+    '^/2014app$',
+    '^/2014app/$',
+);
+
+//市场运营下载APP投票活动列表页
+$config['mappings']['Activity_Downloadappvote_List']=array(
+    '^/2014app/list$',
+    '^/2014app/list/?(.*)$',
+);
