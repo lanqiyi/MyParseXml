@@ -1,4 +1,4 @@
-package com.anjuke.ui.testcase.others;
+package com.anjuke.minzhao.test;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -36,6 +36,8 @@ public class ReadDataFromASO {
 	private  String ASO[] =new String[100];
 	private  String Filename1 = "AppStore应用热词分布.xls";
 	private  String Filename2 = "iPhone应用排名趋势.xls";
+	
+	DataRelativeByAnn9 testData = new DataRelativeByAnn9();
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = FactoryBrowser.factoryBrowser();
@@ -49,8 +51,8 @@ public class ReadDataFromASO {
 		
 		dologin(driver,UserName,Password);
 		Workbook wb = POITest.createExcel();
-		//GetDataFromASO(1,wb);
-		GetDataFromSearchAppRank(0,wb);
+		GetDataFromASO(1,wb);
+//		GetDataFromSearchAppRank(0,wb);
 		
 	}
 	
@@ -58,10 +60,11 @@ public class ReadDataFromASO {
 	public void GetDataFromASO(int flag,Workbook wb){
 	
 		driver.get(ASOUrl);
-		GetCompanyPage(AnjukeTab,"安居客",driver,wb,flag);
+		GetCompanyPage(AnjukeTab,"安居客二手房",driver,wb,flag);
 		GetCompanyPage("//*[@id='ui-id-12']","安居客新房",driver,wb,flag);
 		GetCompanyPage("//*[@id='ui-id-13']","安居客好租",driver,wb,flag);
-		GetCompanyPage("//*[@id='ui-id-5']","搜房",driver,wb,flag);
+		GetCompanyPage("//*[@id='ui-id-5']","搜房网",driver,wb,flag);
+		GetCompanyPage(testData.GanJiTab,"赶集懒人网",driver,wb,flag);
 		
 		
 	}

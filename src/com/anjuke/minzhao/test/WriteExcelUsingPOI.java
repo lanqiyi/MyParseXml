@@ -26,55 +26,55 @@ public class WriteExcelUsingPOI {
     }
     public static class POITest{
         public static void createWorkBook() throws IOException{
-          //����excel���� 
+          //����excel������ 
             Workbook wb = new HSSFWorkbook(); 
             //������һ��sheet��ҳ��������Ϊ new sheet 
             Sheet sheet = wb.createSheet("new sheet"); 
             //Row �� 
             //Cell ���� 
-            // Row �� Cell ���Ǵ�0��ʼ����� 
+            // Row �� Cell ���Ǵ�0��ʼ������ 
              
             // ����һ�У���ҳsheet�� 
             Row row = sheet.createRow((short) 0); 
-            // ��row���ϴ���һ��� 
+            // ��row���ϴ���һ������ 
             //Cell cell = row.createCell(0); 
-            //���÷������ʾ 
+            //���÷�������ʾ 
             //cell.setCellValue(1); 
-            row.createCell(0).setCellValue("�ȴ�");
+            row.createCell(0).setCellValue("热词");
             // Or do it on one line. 
-            row.createCell(1).setCellValue("����"); 
-            row.createCell(2).setCellValue("Ȩ��"); 
+            row.createCell(1).setCellValue("排名"); 
+            row.createCell(2).setCellValue("权重"); 
             //row.createCell(3).setCellValue(true); 
 //            for(int i =1;i<=count;i++){
 //                
 //            }
             //����һ���ļ� ����Ϊworkbook.xls 
             FileOutputStream fileOut = new FileOutputStream("workbook.xls"); 
-            // �����洴���Ĺ�������ļ��� 
+            // �����洴���Ĺ������������ļ��� 
             wb.write(fileOut); 
-            //�ر������ 
+            //�ر������� 
             fileOut.close(); 
         
         }
-        //ʹ��POI����excel�����ļ� 
+        //ʹ��POI����excel�������ļ� 
         public static void readWorkBook() throws Exception { 
             // poi��ȡexcel 
-            //����Ҫ������ļ��������� 
+            //����Ҫ�������ļ��������� 
             InputStream inp = new FileInputStream("workbook.xls"); 
              
-            //���������������� ����������� 
+            //�������������������� �������������� 
             Workbook wb = WorkbookFactory.create(inp); 
             //�õ���һҳ sheet 
-            //ҳSheet�Ǵ�0��ʼ����� 
+            //ҳSheet�Ǵ�0��ʼ������ 
             Sheet sheet = wb.getSheetAt(0); 
             //����foreachѭ�� ����sheet�е������� 
             for (Row row : sheet) { 
                 //����row�е����з��� 
                 for (Cell cell : row) { 
-                    //�����е����ݣ��Կո��� 
+                    //���������е����ݣ��Կո����� 
                     System.out.print(cell.toString() + "  "); 
                 } 
-                //ÿһ�������֮���� 
+                //ÿһ��������֮������ 
                 System.out.println(); 
             } 
             //�ر������� 
@@ -82,3 +82,4 @@ public class WriteExcelUsingPOI {
         } 
     }
 }
+
